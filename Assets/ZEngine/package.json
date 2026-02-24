@@ -1,0 +1,28 @@
+{
+    "name": "com.zengine.framework",
+    "displayName": "ZEngine",
+    "version": "1.0.0",
+    "unity": "2021.3",
+    "description": "一个Unity客户端框架 (A Unity client-side framework). Provides core systems including event management, resource loading, UI framework, audio management, object pooling, timer system, scene management, and configuration management.",
+    "keywords": [
+        "framework",
+        "unity",
+        "client",
+        "ui",
+        "event",
+        "resource",
+        "audio",
+        "pool",
+        "timer"
+    ],
+    "author": {
+        "name": "Chenyu0077",
+        "url": "https://github.com/Chenyu0077"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Chenyu0077/ZEngine.git"
+    },
+    "license": "MIT",
+    "dependencies": {}
+}

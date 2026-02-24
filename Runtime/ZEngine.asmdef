@@ -1,0 +1,22 @@
+{
+    "name": "Zengine",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e34a5702dd353724aa315fb8011f08c3",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:13ba8ce62aa80c74598530029cb2d649",
+        "GUID:f4b3c9b258b9720429457195d5c71510",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:bce341d149920a9428218f831c961a95",
+        "GUID:18d7df514cc26af4b86dbcb5d205ae94"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

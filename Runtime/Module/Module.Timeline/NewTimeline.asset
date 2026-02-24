@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7897839fc899eaf419ca603561ea2b09, type: 3}
+  m_Name: NewTimeline
+  m_EditorClassIdentifier: 
+  tracks:
+  - name: Track 1
+    clips:
+    - displayName: Clip
+      startTime: 1.6799998
+      duration: 1.7280002
+      color: {r: 0.65027636, g: 0.8328514, b: 0.7552061, a: 1}
+      onPlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - displayName: Clip
+      startTime: 6.7799997
+      duration: 1
+      color: {r: 0.3670782, g: 0.59286636, b: 0.4193477, a: 1}
+      onPlay:
+        m_PersistentCalls:
+          m_Calls: []
+    trackType: 0
+  duration: 10

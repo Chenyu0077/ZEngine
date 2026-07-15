@@ -43,3 +43,7 @@ UnityUIExtensions.editor.csproj
 .vscode/extensions.json
 .vscode/launch.json
 .vscode/settings.json
+Bundles/StandaloneWindows64/DefaultPackage/Simulate/DefaultPackage_Simulate.bytes
+Bundles/StandaloneWindows64/DefaultPackage/Simulate/DefaultPackage_Simulate.hash
+Bundles/StandaloneWindows64/DefaultPackage/Simulate/DefaultPackage_Simulate.json
+Bundles/StandaloneWindows64/DefaultPackage/Simulate/DefaultPackage.version

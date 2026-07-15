@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,80" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n3_cl9k" name="n3" src="cl9k18" fileName="Res/Icon/gui_04_plank_01.png" pkg="f70pfjtk" xy="0,0" pivot="0.5,0.5" size="80,80"/>
+    <image id="n0_cl9k" name="n0" src="cl9k19" fileName="Res/Icon/gui_04_icon_12.png" pkg="f70pfjtk" xy="13,13" size="55,55">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_cl9k" name="n1" src="cl9k19" fileName="Res/Icon/gui_04_icon_12.png" pkg="f70pfjtk" xy="13,13" size="55,55" color="#cccccc">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_cl9k" name="n2" src="cl9k19" fileName="Res/Icon/gui_04_icon_12.png" pkg="f70pfjtk" xy="13,13" size="55,55" color="#cccccc">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

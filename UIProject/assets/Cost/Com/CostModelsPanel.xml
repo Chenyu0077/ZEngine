@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="960,160">
+  <displayList>
+    <graph id="n0_bg" name="modelsBg" xy="0,0" size="960,160" type="rect" lineColor="#ffbdc3c7" fillColor="#ffecf0f1" corner="8"/>
+    <graph id="n1_titleBg" name="titleBg" xy="0,0" size="960,35" type="rect" fillColor="#ffe67e22" corner="8,8,0,0"/>
+    <text id="n1_icon" name="titleIcon" xy="15,8" size="8,24" fontSize="16" color="#ffffff" align="center" vAlign="middle" text="🤖"/>
+    <text id="n1_title" name="titleText" xy="40,8" size="74,22" fontSize="14" color="#ffffff" vAlign="middle" text="按模型统计"/>
+    <graph id="n2_headerBg" name="headerBg" xy="0,35" size="960,30" type="rect" fillColor="#ff34495e"/>
+    <text id="n2_1_modelHeader" name="modelHeader" xy="20,42" size="52,19" fontSize="12" color="#ffffff" vAlign="middle" text="模型名称"/>
+    <text id="n2_2_tokenHeader" name="tokenHeader" xy="240,42" size="39,19" fontSize="12" color="#ffffff" align="center" vAlign="middle" text="Token"/>
+    <text id="n2_3_usdHeader" name="usdHeader" xy="360,42" size="52,19" fontSize="12" color="#ffffff" align="center" vAlign="middle" text="费用USD"/>
+    <text id="n2_4_cnyHeader" name="cnyHeader" xy="480,42" size="52,19" fontSize="12" color="#ffffff" align="center" vAlign="middle" text="费用CNY"/>
+    <text id="n2_5_cacheHeader" name="cacheHeader" xy="600,42" size="64,19" fontSize="12" color="#ffffff" align="center" vAlign="middle" text="缓存命中率"/>
+    <text id="n2_6_callsHeader" name="callsHeader" xy="770,42" size="52,19" fontSize="12" color="#ffffff" align="center" vAlign="middle" text="调用次数"/>
+    <graph id="n3_headerLine1" name="headerLine1" xy="230,35" size="1,30" type="rect" fillColor="#ff7f8c8d"/>
+    <graph id="n3_headerLine2" name="headerLine2" xy="350,35" size="1,30" type="rect" fillColor="#ff7f8c8d"/>
+    <graph id="n3_headerLine3" name="headerLine3" xy="470,35" size="1,30" type="rect" fillColor="#ff7f8c8d"/>
+    <graph id="n3_headerLine4" name="headerLine4" xy="590,35" size="1,30" type="rect" fillColor="#ff7f8c8d"/>
+    <graph id="n3_headerLine5" name="headerLine5" xy="760,35" size="1,30" type="rect" fillColor="#ff7f8c8d"/>
+    <list id="n4_list" name="modelList" xy="0,65" size="960,95" overflow="scroll" defaultItem="ui://Cost/ModelListItem" align="center" autoClearItems="true">
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <transition name="sortAsc"/>
+  <transition name="sortDesc"/>
+</component>

@@ -1,0 +1,16 @@
+{
+  "hostServerUrl": "http://101.132.189.85:8084/GameProject/PC",
+  "wsUrl": "ws://localhost:8080/ws",
+  "restApiUrl": "http://localhost:8080/api",
+  "commonModels": [
+    "deepseek-v4-flash"
+  ],
+  "reflectModels": [
+    "deepseek-v4-pro"
+  ],
+  "presetModes": [
+    "fam4_test_villain",
+    "fam16_s9_hist_ming",
+    "fam16_s9_hist_with_villain"
+  ]
+}

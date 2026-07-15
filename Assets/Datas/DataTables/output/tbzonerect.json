@@ -1,0 +1,26 @@
+[
+  {
+    "id": "0001",
+    "zone": "resource",
+    "startX": 0,
+    "startY": 0,
+    "endX": 10,
+    "endY": 8
+  },
+  {
+    "id": "0002",
+    "zone": "public",
+    "startX": 10,
+    "startY": 0,
+    "endX": 22,
+    "endY": 10
+  },
+  {
+    "id": "0003",
+    "zone": "residential",
+    "startX": 0,
+    "startY": 8,
+    "endX": 22,
+    "endY": 22
+  }
+]

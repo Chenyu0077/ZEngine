@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a760d2145f6180842b40f656b784d6fe, type: 3}
+  m_Name: Camera2DSettings
+  m_EditorClassIdentifier: 
+  minZoom: 10
+  maxZoom: 60
+  scrollZoomSpeed: 9
+  keyZoomSpeed: 5
+  zoomSmoothTime: 0.12
+  keyPanSpeed: 10
+  shiftMultiplier: 2.5
+  panSmoothTime: 0
+  dragMouseButton: 1
+  enableMomentum: 0
+  momentumDecay: 6
+  enableEdgeScroll: 0
+  edgeScrollThreshold: 24
+  edgeScrollSpeed: 8
+  followSmoothTime: 0.25
+  followDeadZone: 0.5
+  lockZoomInFollow: 0
+  followLockedZoom: 8
+  minBounds: {x: 0, y: 0}
+  maxBounds: {x: 200, y: 120}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="440,64">
+  <displayList>
+    <graph    id="n0_taxfi" name="back"          xy="0,0"    size="440,64"  type="rect" lineSize="0" fillColor="#33ffffff" corner="4"/>
+    <text     id="n1_taxfi" name="familyName"    xy="10,8"   size="90,24"   fontSize="16" color="#ffffff" vAlign="middle" autoSize="none" bold="true" text="周家"/>
+    <text     id="n2_taxfi" name="tierLabel"     xy="10,36"  size="90,20"   fontSize="12" color="#aaaaaa" vAlign="middle" autoSize="none" text="大地主"/>
+    <text     id="n3_taxfi" name="collectedText" xy="120,20" size="110,24"  fontSize="15" color="#ffffff" vAlign="middle" autoSize="none" text="30/102"/>
+    <graph    id="n4_taxfi" name="progressBg"    xy="120,48" size="200,6"   type="rect" lineSize="0" fillColor="#ff444444" corner="3"/>
+    <graph    id="n5_taxfi" name="progressFill"  xy="120,48" size="60,6"    type="rect" lineSize="0" fillColor="#ff44ff88" corner="3"/>
+    <richtext id="n6_taxfi" name="statusLabel"   xy="360,16" size="70,32"   fontSize="14" align="center" vAlign="middle" autoSize="none" ubb="true" text=""/>
+  </displayList>
+</component>

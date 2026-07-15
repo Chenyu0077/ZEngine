@@ -1,0 +1,16 @@
+{
+  "name": "com.tencent.bqlog",
+  "displayName": "BqLog",
+  "version": "2.1.1",
+  "description": "BqLog Unity Package.",
+  "keywords": [
+    "bqlog",
+    "logging",
+    "high performance"
+  ],
+  "author": {
+    "name": "pippocao",
+    "url": "https://github.com/Tencent/BqLog"
+  },
+  "hideInEditor": false
+}

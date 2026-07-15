@@ -1,0 +1,38 @@
+[
+  {
+    "id": "0001",
+    "name": "建筑物1",
+    "path": "build001",
+    "canPlace": true,
+    "canRemove": true,
+    "cost": 100,
+    "description": "建筑物1"
+  },
+  {
+    "id": "0002",
+    "name": "建筑物2",
+    "path": "build002",
+    "canPlace": true,
+    "canRemove": true,
+    "cost": 200,
+    "description": "建筑物2"
+  },
+  {
+    "id": "0003",
+    "name": "建筑物3",
+    "path": "build003",
+    "canPlace": true,
+    "canRemove": true,
+    "cost": 300,
+    "description": "建筑物3"
+  },
+  {
+    "id": "0004",
+    "name": "建筑物4",
+    "path": "Computer Desk 01",
+    "canPlace": true,
+    "canRemove": true,
+    "cost": 400,
+    "description": "建筑物4"
+  }
+]

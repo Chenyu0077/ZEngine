@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,200">
+  <displayList>
+    <graph id="n0_bg" name="averageBg" xy="0,0" size="300,200" type="rect" lineColor="#ffbdc3c7" fillColor="#ffecf0f1" corner="8"/>
+    <graph id="n1_titleBg" name="titleBg" xy="0,0" size="300,35" type="rect" fillColor="#ff27ae60" corner="8,8,0,0"/>
+    <text id="n1_icon" name="titleIcon" xy="15,8" size="8,24" fontSize="16" color="#ffffff" align="center" vAlign="middle" text="📈"/>
+    <text id="n1_title" name="titleText" xy="40,8" size="120,22" fontSize="14" color="#ffffff" vAlign="middle" text="平均统计 (day≥1)"/>
+    <text id="n2_npcDayTitle" name="npcDayTitle" xy="20,45" size="93,19" fontSize="12" color="#2c3e50" vAlign="middle" text="单NPC单日费用:"/>
+    <text id="n3_npcUsdLabel" name="npcUsdLabel" xy="30,65" size="32,19" fontSize="12" color="#7f8c8d" vAlign="middle" text="USD:"/>
+    <text id="n3_npcUsdValue" name="npcUsdValue" xy="180,65" size="43,19" fontSize="12" color="#e74c3c" align="right" vAlign="middle" text="$0.016"/>
+    <text id="n4_npcCnyLabel" name="npcCnyLabel" xy="30,85" size="32,19" fontSize="12" color="#7f8c8d" vAlign="middle" text="CNY:"/>
+    <text id="n4_npcCnyValue" name="npcCnyValue" xy="180,85" size="43,19" fontSize="12" color="#e74c3c" align="right" vAlign="middle" text="¥0.109"/>
+    <graph id="n5_separator" name="separator" xy="20,105" size="260,1" type="rect" fillColor="#ffbdc3c7"/>
+    <text id="n6_npcTokenLabel" name="npcTokenLabel" xy="20,115" size="104,19" fontSize="12" color="#2c3e50" vAlign="middle" text="单NPC单日Token:"/>
+    <text id="n6_npcTokenValue" name="npcTokenValue" xy="180,115" size="33,19" fontSize="12" color="#2c3e50" align="right" vAlign="middle" text="125K"/>
+    <graph id="n7_separator2" name="separator2" xy="20,135" size="260,1" type="rect" fillColor="#ffbdc3c7"/>
+    <text id="n8_villageTitle" name="villageTitle" xy="20,145" size="80,19" fontSize="12" color="#2c3e50" vAlign="middle" text="全村单日平均:"/>
+    <text id="n9_villageUsdLabel" name="villageUsdLabel" xy="30,165" size="32,19" fontSize="12" color="#7f8c8d" vAlign="middle" text="USD:"/>
+    <text id="n9_villageUsdValue" name="villageUsdValue" xy="84,165" size="43,19" fontSize="12" color="#e74c3c" align="right" vAlign="middle" text="$0.479"/>
+    <text id="n10_villageCnyLabel" name="villageCnyLabel" xy="174,165" size="32,19" fontSize="12" color="#7f8c8d" vAlign="middle" text="CNY:"/>
+    <text id="n10_villageCnyValue" name="villageCnyValue" xy="222,165" size="36,19" fontSize="12" color="#e74c3c" align="right" vAlign="middle" text="¥3.26"/>
+  </displayList>
+  <transition name="update"/>
+</component>

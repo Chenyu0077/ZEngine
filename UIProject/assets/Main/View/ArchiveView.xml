@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <graph id="n3_yadn" name="back" xy="0,0" size="1920,1080" type="rect" lineColor="#ffffffff" fillColor="#ff6699cc"/>
+    <component id="n0_ixn4" name="CloseBtn" src="ixn44" fileName="Com/CloseBtn1.xml" pkg="f70pfjtk" xy="1641,75">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n4_k9hz" name="addBtn" src="k9hz6" fileName="Com/AddBtn.xml" xy="127,86">
+      <relation target="" sidePair="left-left,top-top"/>
+    </component>
+    <list id="n2_ixn4" name="SaveList" xy="335,185" size="1278,799" overflow="scroll" lineGap="10" defaultItem="ui://q0la9fq0ixn44" align="center" autoClearItems="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

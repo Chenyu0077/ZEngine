@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="22,22" extention="Button">
+  <Button/>
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver"/>
+  <displayList>
+    <!-- 默认状态：暖棕圆形 -->
+    <graph id="sg0" name="n0" xy="0,0" size="22,22" type="ellipse" lineSize="0" fillColor="#ff8a6040" touchable="false">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width,height"/>
+    </graph>
+    <!-- hover 状态：更亮 -->
+    <graph id="sg1" name="n1" xy="0,0" size="22,22" type="ellipse" lineSize="0" fillColor="#ffb08050" touchable="false">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width,height"/>
+    </graph>
+    <!-- 按下状态：深棕 -->
+    <graph id="sg2" name="n2" xy="0,0" size="22,22" type="ellipse" lineSize="0" fillColor="#ff5a3a20" touchable="false">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width,height"/>
+    </graph>
+  </displayList>
+</component>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="460,60" pivot="0.5,0.5">
+  <controller name="side" pages="0,left,1,right" selected="0"/>
+  <displayList>
+    <graph id="n0_phs3" name="leftBubble" xy="8,6" size="360,50" type="rect" lineSize="0" fillColor="#33aaaaaa" corner="8">
+      <gearDisplay controller="side" pages="0"/>
+    </graph>
+    <graph id="n1_phs3" name="rightBubble" xy="92,6" size="360,50" type="rect" lineSize="0" fillColor="#335599ff" corner="8">
+      <gearDisplay controller="side" pages="1"/>
+    </graph>
+    <text id="n2_phs3" name="speakerLeft" xy="12,6" size="80,18" fontSize="11" color="#aaaaaa" vAlign="middle" autoSize="none" text="周存仁">
+      <gearDisplay controller="side" pages="0"/>
+    </text>
+    <text id="n3_phs3" name="speakerRight" xy="368,6" size="80,18" fontSize="11" color="#88aaff" align="right" vAlign="middle" autoSize="none" text="村长">
+      <gearDisplay controller="side" pages="1"/>
+    </text>
+    <text id="n4_phs3" name="textLeft" xy="12,18" size="356,28" fontSize="13" color="#ffffff" vAlign="middle" autoSize="none" text="行，先拿去。">
+      <gearDisplay controller="side" pages="0"/>
+    </text>
+    <text id="n5_phs3" name="textRight" xy="92,18" size="356,28" fontSize="13" color="#ccdeff" align="right" vAlign="middle" autoSize="none" text="借两斤米">
+      <gearDisplay controller="side" pages="1"/>
+    </text>
+    <text id="n6_phs3" name="resultText" xy="12,40" size="436,14" fontSize="10" color="#667788" vAlign="middle" autoSize="none" text="周存仁答应借你米"/>
+  </displayList>
+</component>

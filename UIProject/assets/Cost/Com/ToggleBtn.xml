@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="120,30" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="toggle" pages="0,off,1,on" selected="0"/>
+  <displayList>
+    <graph id="n0_offBg" name="offBg" xy="0,5" size="50,20" type="rect" fillColor="#ff95a5a6" corner="10">
+      <gearDisplay controller="toggle" pages="0"/>
+    </graph>
+    <graph id="n1_onBg" name="onBg" xy="0,5" size="50,20" type="rect" fillColor="#ff27ae60" corner="10">
+      <gearDisplay controller="toggle" pages="1"/>
+    </graph>
+    <graph id="n2_offHandle" name="offHandle" xy="2,7" size="16,16" type="eclipse">
+      <gearDisplay controller="toggle" pages="0"/>
+    </graph>
+    <graph id="n3_onHandle" name="onHandle" xy="32,7" size="16,16" type="eclipse">
+      <gearDisplay controller="toggle" pages="1"/>
+    </graph>
+    <text id="n4_label" name="label" xy="60,8" size="60,14" fontSize="12" color="#ffffff" vAlign="middle" text=""/>
+  </displayList>
+  <Button mode="Check"/>
+  <transition name="toggleOn"/>
+  <transition name="toggleOff"/>
+</component>

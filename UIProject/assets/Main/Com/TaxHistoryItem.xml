@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="440,48">
+  <displayList>
+    <graph    id="n0_taxhi" name="back"         xy="0,0"    size="440,48"  type="rect" lineSize="0" fillColor="#22ffffff" corner="4"/>
+    <text     id="n1_taxhi" name="cycleText"    xy="10,14"  size="55,20"   fontSize="14" color="#cccccc" vAlign="middle" autoSize="none" text="第1期"/>
+    <text     id="n2_taxhi" name="requiredText" xy="70,14"  size="80,20"   fontSize="13" color="#cccccc" vAlign="middle" autoSize="none" text="应收250"/>
+    <text     id="n3_taxhi" name="actualText"   xy="155,14" size="80,20"   fontSize="13" color="#cccccc" vAlign="middle" autoSize="none" text="实收35"/>
+    <text     id="n4_taxhi" name="ratioText"    xy="240,14" size="55,20"   fontSize="13" color="#cccccc" vAlign="middle" autoSize="none" text="14%"/>
+    <richtext id="n5_taxhi" name="outcomeText"  xy="295,14" size="135,20"  fontSize="13" vAlign="middle" autoSize="none" ubb="true" text="达标"/>
+  </displayList>
+</component>

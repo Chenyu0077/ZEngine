@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1000,700" pivot="0.5,0.5" anchor="true">
+  <controller name="stateCtrl" pages="0,loading,1,data,2,error" selected="0"/>
+  <displayList>
+    <graph id="n0_bg" name="mainBg" xy="0,0" pivot="0.5,0.5" size="1000,700" type="rect" fillColor="#ff2c3e50" corner="10"/>
+    <component id="n5_jxy5" name="headerPanel" src="cost_header" fileName="Com/CostHeaderPanel.xml" xy="0,0" pivot="0.5,0.5"/>
+    <component id="n6_jxy5" name="basicInfoPanel" src="cost_basic" fileName="Com/CostBasicInfoPanel.xml" xy="22,91" pivot="0.5,0.5"/>
+    <component id="n7_jxy5" name="cumulativePanel" src="cost_cumulative" fileName="Com/CostCumulativePanel.xml" xy="22,167" pivot="0.5,0.5"/>
+    <component id="n8_jxy5" name="averagePanel" src="cost_average" fileName="Com/CostAveragePanel.xml" xy="355,167" pivot="0.5,0.5"/>
+    <component id="n9_jxy5" name="villagePanel" src="cost_village" fileName="Com/CostVillagePanel.xml" xy="682,167" pivot="0.5,0.5"/>
+    <component id="n10_jxy5" name="cachePanel" src="cost_cache" fileName="Com/CostCachePanel.xml" xy="22,381" pivot="0.5,0.5"/>
+    <component id="n11_jxy5" name="modelsPanel" src="cost_models" fileName="Com/CostModelsPanel.xml" xy="22,516" pivot="0.5,0.5"/>
+  </displayList>
+  <transition name="show">
+    <item time="0" type="Scale" tween="true" startValue="0.8,0.8" endValue="1,1" duration="20"/>
+    <item time="0" type="Alpha" tween="true" startValue="0" endValue="1" duration="20"/>
+  </transition>
+  <transition name="hide">
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0.8,0.8" duration="15"/>
+    <item time="0" type="Alpha" tween="true" startValue="1" endValue="0" duration="15"/>
+  </transition>
+  <transition name="dataUpdate"/>
+</component>

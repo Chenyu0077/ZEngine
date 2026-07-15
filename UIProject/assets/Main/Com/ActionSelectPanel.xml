@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="456,220" opaque="false">
+  <displayList>
+    <graph id="n0_asp" name="back" xy="-1,0" size="456,221" touchable="false" type="rect" lineSize="0" fillColor="#ffcccccc" corner="12">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n1_asp" name="titleIcon" xy="16,5" size="8,26" fontSize="18" align="center" vAlign="middle" text="🎯"/>
+    <text id="n2_asp" name="title" xy="30,5" size="90,24" fontSize="16" color="#333333" vAlign="middle" autoSize="none" text="选择子动作"/>
+    <graph id="n3_asp" name="divider" xy="0,34" size="456,2" touchable="false" type="rect" fillColor="#ffeeeeee"/>
+    <list id="n40_jxy5" name="btnList" xy="15,37" size="432,109" layout="pagination" lineGap="5" colGap="8" lineItemCount="6" lineItemCount2="3" defaultItem="ui://q0la9fq0jxy51m" align="center" vAlign="middle">
+      <item title="说话" name="talkBtn"/>
+      <item title="耳语" name="whisperBtn"/>
+      <item title="辱骂" name="scoldBtn"/>
+      <item title="攻击" name="attackBtn"/>
+      <item title="赠送" name="giftBtn"/>
+      <item title="交易" name="tradeBtn"/>
+      <item title="观察" name="observeBtn"/>
+      <item title="搜身" name="searchBtn"/>
+      <item title="索要" name="demandBtn"/>
+      <item title="同意" name="agreeBtn"/>
+      <item title="吃" name="eatBtn"/>
+      <item title="逃跑" name="fleeBtn"/>
+      <item title="休息" name="restBtn"/>
+    </list>
+    <graph id="n17_asp" name="bottomDivider" xy="0,178" size="456,2" touchable="false" type="rect" fillColor="#ffeeeeee"/>
+    <component id="n44_jxy5" name="btnExcuteTalk" src="k4vsa" fileName="Com/ComBtn.xml" xy="24,187" pivot="0.5,0.5" size="152,28">
+      <Button title="执行子动作"/>
+    </component>
+    <component id="n43_jxy5" name="btnTalkOver" src="k4vsa" fileName="Com/ComBtn.xml" xy="208,187" pivot="0.5,0.5" size="152,28">
+      <Button title="结束对话"/>
+    </component>
+    <text id="n46_gri9" name="childActionTip" xy="16,145" size="357,32" fontSize="12" autoSize="none" text="这是一个子动作提示"/>
+  </displayList>
+</component>

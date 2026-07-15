@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <graph id="n0_o6bc" name="mask" xy="0,0" pivot="0.5,0.5" size="1920,1080" type="rect" fillColor="#c22d2d2d"/>
+    <graph id="n1_o6bc" name="back" xy="491,168" pivot="0.5,0.5" size="900,700" type="rect" fillColor="#ff333333">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n2_o6bc" name="Title" xy="654,211" pivot="0.5,0.5" size="590,54" fontSize="36" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="NPC信息">
+      <relation target="" sidePair="width-width,height-height,center-center"/>
+      <relation target="n1_o6bc" sidePair="top-top"/>
+    </text>
+    <component id="n6_hx1r" name="ScrollText" src="hx1rj" fileName="Com/ScrollText.xml" xy="526,305" pivot="0.5,0.5" size="832,458"/>
+    <component id="n4_o6bc" name="BtnClose" src="o6bcd" fileName="Com/MenuBtn.xml" xy="693,788" pivot="0.5,0.5" size="508,54">
+      <relation target="" sidePair="width-width,height-height,center-center"/>
+      <relation target="n1_o6bc" sidePair="bottom-bottom"/>
+      <Button title="关闭" titleFontSize="30"/>
+    </component>
+  </displayList>
+</component>

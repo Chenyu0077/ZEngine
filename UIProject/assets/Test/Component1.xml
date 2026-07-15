@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600">
+  <displayList>
+    <image id="n2_gmxq" name="picture" src="r6ajk" fileName="Res/GsVrjTRaMAA4uIA.jpg" pkg="f70pfjtk" xy="333,67" size="414,414" aspect="true"/>
+    <component id="n1_u7wg" name="reBtn" src="u7wg2" fileName="Button1.xml" xy="86,550">
+      <Button title="撒娇" selectedTitle="撒娇"/>
+    </component>
+  </displayList>
+</component>

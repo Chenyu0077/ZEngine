@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080">
+  <displayList>
+    <list id="n2_k4vs" name="cardList" xy="93,13" size="1728,522" aspect="true" layout="row" overflow="hidden" colGap="10" defaultItem="ui://q0la9fq0k4vs8" align="center" vAlign="middle">
+      <relation target="" sidePair="center-center,top-top"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n5_k4vs" name="content" xy="374,581" size="1194,143" aspect="true" fontSize="24" color="#ffffff" autoSize="none" text="描述文本"/>
+    <component id="n4_k4vs" name="confirmBtn" src="k4vsa" fileName="Com/ComBtn.xml" xy="882,839" size="200,69" aspect="true">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+      <Button title="确认" titleFontSize="24"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7897839fc899eaf419ca603561ea2b09, type: 3}
+  m_Name: New Timeline Asset
+  m_EditorClassIdentifier: 
+  tracks:
+  - name: Track 1
+    clips:
+    - displayName: Clip
+      startTime: 6.2995024
+      duration: 1.5112739
+      color: {r: 0.94690394, g: 0.97354925, b: 0.567108, a: 1}
+      onPlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - displayName: Clip
+      startTime: 1.3883054
+      duration: 1.3306451
+      color: {r: 0.38576657, g: 0.9114671, b: 0.46229774, a: 1}
+      onPlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - displayName: Clip
+      startTime: 3.3232803
+      duration: 1
+      color: {r: 0.45713574, g: 0.6280828, b: 0.6881998, a: 1}
+      onPlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - displayName: Clip
+      startTime: 4.7525234
+      duration: 1
+      color: {r: 0.8720455, g: 0.806669, b: 0.55437666, a: 1}
+      onPlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - displayName: Clip
+      startTime: 0
+      duration: 1
+      color: {r: 0.820284, g: 0.8170669, b: 0.88540244, a: 1}
+      onPlay:
+        m_PersistentCalls:
+          m_Calls: []
+    trackType: 0
+  - name: Track 2
+    clips:
+    - displayName: Clip
+      startTime: 2.6
+      duration: 1
+      color: {r: 0.17686619, g: 0.707293, b: 0.38754195, a: 1}
+      onPlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - displayName: Clip
+      startTime: 0.7
+      duration: 1
+      color: {r: 0.026960496, g: 0.70474905, b: 0.10323514, a: 1}
+      onPlay:
+        m_PersistentCalls:
+          m_Calls: []
+    trackType: 0
+  - name: Track 3
+    clips:
+    - displayName: Clip
+      startTime: 2.6980002
+      duration: 1.9960027
+      color: {r: 0.3952071, g: 0.07796586, b: 0.5004695, a: 1}
+      onPlay:
+        m_PersistentCalls:
+          m_Calls: []
+    trackType: 0
+  - name: Track 4
+    clips:
+    - displayName: Clip
+      startTime: 0.49670982
+      duration: 1.282258
+      color: {r: 0.3820395, g: 0.7255276, b: 0.15758206, a: 1}
+      onPlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - displayName: Clip
+      startTime: 0.93
+      duration: 1
+      color: {r: 0.5033241, g: 0.33996382, b: 0.9684745, a: 1}
+      onPlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - displayName: Clip
+      startTime: 0.93
+      duration: 1
+      color: {r: 0.011116267, g: 0.34228352, b: 0.25027505, a: 1}
+      onPlay:
+        m_PersistentCalls:
+          m_Calls: []
+    trackType: 0
+  - name: Track 5
+    clips: []
+    trackType: 0
+  - name: Track 6
+    clips: []
+    trackType: 0
+  duration: 10

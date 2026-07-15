@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,200">
+  <displayList>
+    <graph id="n0_bg" name="cumulativeBg" xy="0,0" size="300,200" type="rect" lineColor="#ffbdc3c7" fillColor="#ffecf0f1" corner="8"/>
+    <graph id="n1_titleBg" name="titleBg" xy="0,0" size="300,35" type="rect" fillColor="#ff3498db" corner="8,8,0,0"/>
+    <text id="n1_icon" name="titleIcon" xy="15,8" size="8,24" fontSize="16" color="#ffffff" align="center" vAlign="middle" text="📊"/>
+    <text id="n1_title" name="titleText" xy="40,8" size="60,22" fontSize="14" color="#ffffff" vAlign="middle" text="累计统计"/>
+    <text id="n2_totalTokenLabel" name="totalTokenLabel" xy="20,45" size="55,19" fontSize="12" color="#2c3e50" vAlign="middle" text="总Token:"/>
+    <text id="n2_totalTokenValue" name="totalTokenValue" xy="120,45" size="47,19" fontSize="12" color="#2c3e50" align="right" vAlign="middle" text="1.2M 个"/>
+    <text id="n3_inputTokenLabel" name="inputTokenLabel" xy="20,65" size="67,19" fontSize="12" color="#2c3e50" vAlign="middle" text="输入Token:"/>
+    <text id="n3_inputTokenValue" name="inputTokenValue" xy="120,65" size="48,19" fontSize="12" color="#2c3e50" align="right" vAlign="middle" text="800K 个"/>
+    <text id="n4_outputTokenLabel" name="outputTokenLabel" xy="20,85" size="67,19" fontSize="12" color="#2c3e50" vAlign="middle" text="输出Token:"/>
+    <text id="n4_outputTokenValue" name="outputTokenValue" xy="120,85" size="48,19" fontSize="12" color="#2c3e50" align="right" vAlign="middle" text="400K 个"/>
+    <graph id="n5_separator" name="separator" xy="20,105" size="260,1" type="rect" fillColor="#ffbdc3c7"/>
+    <text id="n6_costUsdLabel" name="costUsdLabel" xy="20,115" size="56,19" fontSize="12" color="#2c3e50" vAlign="middle" text="费用USD:"/>
+    <text id="n6_costUsdValue" name="costUsdValue" xy="120,115" size="36,19" fontSize="12" color="#e74c3c" align="right" vAlign="middle" text="$1.46"/>
+    <text id="n7_costCnyLabel" name="costCnyLabel" xy="20,135" size="56,19" fontSize="12" color="#2c3e50" vAlign="middle" text="费用CNY:"/>
+    <text id="n7_costCnyValue" name="costCnyValue" xy="120,135" size="36,19" fontSize="12" color="#e74c3c" align="right" vAlign="middle" text="¥9.93"/>
+    <graph id="n8_separator2" name="separator2" xy="20,155" size="260,1" type="rect" fillColor="#ffbdc3c7"/>
+    <text id="n9_cacheLabel" name="cacheLabel" xy="20,165" size="68,19" fontSize="12" color="#2c3e50" vAlign="middle" text="缓存命中率:"/>
+    <text id="n9_cacheValue" name="cacheValue" xy="202,165" size="47,19" fontSize="12" color="#27ae60" align="right" vAlign="middle" text="59.23%"/>
+    <component id="n11_jxy5" name="cacheProgressBar" src="cost_progress" fileName="Com/ProgressBar.xml" xy="100,167" pivot="0.5,0.5">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <text id="n10_latencyLabel" name="latencyLabel" xy="203,183" size="36,16" fontSize="10" color="#95a5a6" vAlign="middle" text="245ms"/>
+  </displayList>
+  <transition name="update"/>
+</component>

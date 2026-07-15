@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="560,22" extention="Slider">
+  <Slider/>
+  <displayList>
+    <!-- 轨道背景：浅米棕 -->
+    <graph id="ss0" name="n0" xy="0,9" size="560,4" type="rect" lineSize="0" fillColor="#ffe8d8c0" corner="2">
+      <relation target="" sidePair="width"/>
+    </graph>
+    <!-- 已填充进度条：暖棕金 -->
+    <graph id="ss1" name="bar" xy="0,9" size="280,4" type="rect" lineSize="0" fillColor="#ffa07840" corner="2"/>
+    <!-- 拖拽圆点 -->
+    <component id="ss2" name="grip" src="set001g" fileName="Com/SettingsSlider_grip.xml" xy="269,-0">
+      <relation target="ss1" sidePair="right-right"/>
+    </component>
+  </displayList>
+</component>

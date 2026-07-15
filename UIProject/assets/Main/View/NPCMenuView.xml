@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="200,225" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <graph id="n6_w3fr" name="back" xy="0,0" pivot="0.5,0.5" size="200,225" aspect="true" type="rect" lineSize="0" fillColor="#73000000"/>
+    <component id="n3_o6bc" name="BtnAttribute" src="o6bcd" fileName="Com/MenuBtn.xml" xy="40,21" pivot="0.5,0.5" size="121,31" aspect="true">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Button title="属性" titleFontSize="21"/>
+    </component>
+    <component id="n4_o6bc" name="BtnSchedule" src="o6bcd" fileName="Com/MenuBtn.xml" xy="40,84" pivot="0.5,0.5" size="121,31" aspect="true">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Button title="日程" titleFontSize="21"/>
+    </component>
+    <component id="n5_o6bc" name="BtnBackground" src="o6bcd" fileName="Com/MenuBtn.xml" xy="40,146" pivot="0.5,0.5" size="121,31" aspect="true">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Button title="背景" titleFontSize="21"/>
+    </component>
+  </displayList>
+</component>

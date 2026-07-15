@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,200">
+  <displayList>
+    <graph id="n0_bg" name="villageBg" xy="0,0" size="300,200" type="rect" lineColor="#ffbdc3c7" fillColor="#ffecf0f1" corner="8"/>
+    <graph id="n1_titleBg" name="titleBg" xy="0,0" size="300,35" type="rect" fillColor="#fff39c12" corner="8,8,0,0"/>
+    <text id="n1_icon" name="titleIcon" xy="15,8" size="8,24" fontSize="16" color="#ffffff" align="center" vAlign="middle" text="🏘️"/>
+    <text id="n1_title" name="titleText" xy="40,8" size="110,22" fontSize="14" color="#ffffff" vAlign="middle" text="建村成本 (Day 0)"/>
+    <text id="n2_tokenLabel" name="tokenLabel" xy="20,55" size="67,19" fontSize="12" color="#2c3e50" vAlign="middle" text="Token消耗:"/>
+    <text id="n2_tokenValue" name="tokenValue" xy="180,55" size="41,19" fontSize="12" color="#2c3e50" align="right" vAlign="middle" text="62K 个"/>
+    <text id="n3_callLabel" name="callLabel" xy="20,80" size="56,19" fontSize="12" color="#2c3e50" vAlign="middle" text="调用次数:"/>
+    <text id="n3_callValue" name="callValue" xy="180,80" size="33,19" fontSize="12" color="#2c3e50" align="right" vAlign="middle" text="24 次"/>
+    <graph id="n4_separator" name="separator" xy="20,105" size="260,1" type="rect" fillColor="#ffbdc3c7"/>
+    <text id="n5_costUsdLabel" name="costUsdLabel" xy="20,120" size="56,19" fontSize="12" color="#2c3e50" vAlign="middle" text="费用USD:"/>
+    <text id="n5_costUsdValue" name="costUsdValue" xy="180,120" size="43,19" fontSize="12" color="#e74c3c" align="right" vAlign="middle" text="$0.022"/>
+    <text id="n6_costCnyLabel" name="costCnyLabel" xy="20,145" size="56,19" fontSize="12" color="#2c3e50" vAlign="middle" text="费用CNY:"/>
+    <text id="n6_costCnyValue" name="costCnyValue" xy="180,145" size="43,19" fontSize="12" color="#e74c3c" align="right" vAlign="middle" text="¥0.148"/>
+    <text id="n7_percentageLabel" name="percentageLabel" xy="20,170" size="47,16" fontSize="10" color="#95a5a6" vAlign="middle" text="占总成本:"/>
+    <text id="n7_percentageValue" name="percentageValue" xy="180,170" size="28,16" fontSize="10" color="#95a5a6" align="right" vAlign="middle" text="1.5%"/>
+  </displayList>
+  <transition name="update"/>
+</component>

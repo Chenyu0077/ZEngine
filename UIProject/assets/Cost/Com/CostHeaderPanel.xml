@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1000,80">
+  <displayList>
+    <graph id="n0_bg" name="headerBg" xy="0,0" size="1000,80" type="rect" fillColor="#ff34495e" corner="10,10,0,0"/>
+    <text id="n1_title" name="windowTitle" xy="30,20" size="210,26" fontSize="18" color="#ffffff" vAlign="middle" text="成本统计 - Cost Analytics"/>
+    <component id="n8_jxy5" name="autoRefreshToggle" src="cost_toggle" fileName="Com/ToggleBtn.xml" xy="350,25" pivot="0.5,0.5">
+      <Button titleColor="#bdc3c7" titleFontSize="12"/>
+    </component>
+    <text id="n2_1_label" name="toggleLabel" xy="416,30" size="52,19" fontSize="12" color="#bdc3c7" vAlign="middle" text="自动刷新"/>
+    <text id="n3_lastUpdate" name="lastUpdateTime" xy="580,33" size="149,16" fontSize="10" color="#95a5a6" vAlign="middle" text="最后更新: 2026-06-23 14:30:25"/>
+    <component id="n13_jxy5" name="refreshBtn" src="jxy51x4wgty" fileName="Com/RefreshBtn.xml" xy="800,25" pivot="0.5,0.5" size="80,30">
+      <Button title="手动刷新"/>
+    </component>
+    <component id="n12_jxy5" name="closeBtn" src="jxy51x4wgtw" fileName="Com/CloseBtn.xml" xy="945,25" pivot="0.5,0.5" size="30,30">
+      <Button title="X"/>
+    </component>
+  </displayList>
+  <transition name="refreshing"/>
+</component>

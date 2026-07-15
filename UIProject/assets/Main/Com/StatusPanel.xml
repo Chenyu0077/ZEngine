@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="360,380" opaque="false" bgColor="#666666">
+  <controller name="bagCtrol" pages="0,collapse,1,expand" selected="1"/>
+  <displayList>
+    <graph id="n0_sp" name="back" xy="0,0" size="360,380" touchable="false" type="rect" lineSize="0" fillColor="#ffcccccc" corner="12">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <component id="n47_jxy5" name="health" src="jxy51h" fileName="Com/StatusBarItem.xml" xy="17,7" pivot="0.5,0.5">
+      <relation target="" sidePair="width-width,center-center"/>
+    </component>
+    <component id="n48_jxy5" name="energy" src="jxy51h" fileName="Com/StatusBarItem.xml" xy="17,37" pivot="0.5,0.5">
+      <relation target="" sidePair="width-width,center-center"/>
+    </component>
+    <component id="n49_jxy5" name="food" src="jxy51h" fileName="Com/StatusBarItem.xml" xy="17,63" pivot="0.5,0.5">
+      <relation target="" sidePair="width-width,center-center"/>
+    </component>
+    <component id="n50_jxy5" name="mood" src="jxy51h" fileName="Com/StatusBarItem.xml" xy="17,91" pivot="0.5,0.5">
+      <relation target="" sidePair="width-width,center-center"/>
+    </component>
+    <component id="n51_jxy5" name="rest" src="jxy51h" fileName="Com/StatusBarItem.xml" xy="17,119" pivot="0.5,0.5">
+      <relation target="" sidePair="width-width,center-center"/>
+    </component>
+    <component id="n52_jxy5" name="play" src="jxy51h" fileName="Com/StatusBarItem.xml" xy="17,148" pivot="0.5,0.5">
+      <relation target="" sidePair="width-width,center-center"/>
+    </component>
+    <graph id="n33_sp" name="bagBg" xy="0,188" size="360,187" group="n46_jxy5" touchable="false" type="rect" lineSize="0" corner="12">
+      <gearDisplay controller="bagCtrol" pages="1"/>
+      <relation target="" sidePair="width-width"/>
+    </graph>
+    <graph id="n34_sp" name="bagBgCollapsed" xy="0,188" size="360,52" group="n46_jxy5" touchable="false" type="rect" lineSize="0" corner="12">
+      <gearDisplay controller="bagCtrol" pages="0"/>
+      <relation target="" sidePair="width-width"/>
+    </graph>
+    <text id="n35_sp" name="bagArrowExpand" xy="16,200" size="20,24" group="n46_jxy5" fontSize="16" color="#555555" align="center" vAlign="middle" text="∨">
+      <gearDisplay controller="bagCtrol" pages="1"/>
+    </text>
+    <text id="n36_sp" name="bagArrowCollapse" xy="16,200" size="9,24" group="n46_jxy5" fontSize="16" color="#555555" align="center" vAlign="middle" text="›">
+      <gearDisplay controller="bagCtrol" pages="0"/>
+    </text>
+    <text id="n37_sp" name="bagIcon" xy="40,200" size="8,26" group="n46_jxy5" fontSize="18" align="center" vAlign="middle" text="🎒"/>
+    <text id="n38_sp" name="bagTitle" xy="68,202" size="36,23" group="n46_jxy5" fontSize="15" color="#333333" vAlign="middle" bold="true" text="背包"/>
+    <text id="n39_sp" name="bagCount" xy="192,202" size="39,22" group="n46_jxy5" fontSize="14" color="#888888" vAlign="middle" text="(3 件)"/>
+    <graph id="n40_sp" name="bagToggleBtn" xy="0,188" size="360,52" group="n46_jxy5" type="rect" fillColor="#00ffffff">
+      <relation target="" sidePair="width-width"/>
+    </graph>
+    <graph id="n41_sp" name="bagDivider" xy="16,242" size="328,1" group="n46_jxy5" touchable="false" type="rect" fillColor="#ffeeeeee">
+      <gearDisplay controller="bagCtrol" pages="1"/>
+    </graph>
+    <list id="n53_gri9" name="itemList" xy="6,247" size="346,119" group="n46_jxy5" overflow="scroll" margin="5,0,0,0" lineGap="10" defaultItem="ui://q0la9fq0gri91u" autoClearItems="true">
+      <gearDisplay controller="bagCtrol" pages="1"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n46_jxy5" name="n46" xy="0,188" size="360,187" advanced="true">
+      <relation target="" sidePair="width-width,center-center"/>
+    </group>
+  </displayList>
+</component>

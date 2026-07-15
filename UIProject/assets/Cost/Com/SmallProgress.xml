@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="60,12" extention="ProgressBar">
+  <displayList>
+    <!-- 小型背景轨道 -->
+    <graph id="n0" name="bg" xy="0,0" size="60,12"
+           type="rect" fillColor="#7f34495e" corner="6"/>
+
+    <!-- 小型进度填充 -->
+    <graph id="n1" name="bar" xy="1,1" size="58,10"
+           type="rect" fillColor="#ff3498db" corner="5"/>
+  </displayList>
+
+  <ProgressBar titleType=""/>
+</component>

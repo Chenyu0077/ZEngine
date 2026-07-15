@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="274,70" pivot="0.5,1" anchor="true" opaque="false">
+  <displayList>
+    <graph id="bbl01" name="bg" xy="0,0" pivot="0.5,1" size="272,60" type="rect" lineSize="2" lineColor="#ffffffff" fillColor="#dd000000" corner="12">
+      <relation target="n0_tbcz" sidePair="topext-top,bottomext-bottom"/>
+      <relation target="" sidePair="width-width"/>
+    </graph>
+    <graph id="bbl02" name="arrow" xy="127,56" pivot="0.5,0" size="20,14" type="polygon" lineSize="0" fillColor="#dd000000" points="0,0,20,0,10,14">
+      <relation target="bbl01" sidePair="top-bottom"/>
+    </graph>
+    <richtext id="n0_tbcz" name="txt" xy="14,17" pivot="0,1" size="246,26" fontSize="18" color="#ffffff" leading="4" autoSize="height" strokeColor="#000000" text="睡觉中......"/>
+  </displayList>
+  <transition name="show">
+    <item time="0" type="Pivot" value="0.5,1"/>
+    <item time="0" type="Alpha" value="0"/>
+    <item time="0" type="Alpha" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Scale" value="0.7,0.7"/>
+    <item time="0" type="Scale" tween="true" startValue="0.7,0.7" endValue="1,1" duration="8" ease="Back.Out"/>
+  </transition>
+  <transition name="hide">
+    <item time="0" type="Pivot" value="0.5,1"/>
+    <item time="0" type="Alpha" tween="true" startValue="1" endValue="0" duration="6" ease="Quad.In"/>
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0.8,0.8" duration="6" ease="Quad.In"/>
+  </transition>
+</component>

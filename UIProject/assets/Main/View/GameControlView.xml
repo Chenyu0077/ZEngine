@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="352,339" pivot="0.5,0.5" anchor="true">
+  <controller name="popCtrol" pages="0,hide,1,show" selected="0"/>
+  <displayList>
+    <graph id="n7_w3fr" name="back" xy="0,0" size="352,339" type="rect" lineSize="0" fillColor="#69000000" corner="10"/>
+    <text id="n1_w3fr" name="n1" xy="9,-30" pivot="0.5,0.5" size="60,39" visible="false" touchable="false" fontSize="22" align="center" vAlign="middle" autoSize="none" text="家庭" input="true">
+      <relation target="" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n5_w3fr" name="faimlyCount" xy="318,-26" pivot="0.5,0.5" size="17,32" visible="false" touchable="false" fontSize="22" align="center" text="4" input="true">
+      <relation target="" sidePair="right-right,top-top"/>
+    </text>
+    <component id="n0_w3fr" name="faimlySlider" src="kfm1m" fileName="Com/Slider1.xml" pkg="f70pfjtk" xy="79,-15" pivot="0.5,0.5" size="224,10" visible="false" touchable="false">
+      <relation target="" sidePair="right-right,top-top"/>
+      <Slider value="50" max="100"/>
+    </component>
+    <list id="n11_cmei" name="btnList" xy="13,25" size="325,250" layout="pagination" overflow="hidden" lineGap="20" colGap="10" lineItemCount="2" defaultItem="ui://f70pfjtkcmein" align="center">
+      <relation target="" sidePair="center-center"/>
+      <item title="开启服务" name="btnStartServer"/>
+      <item title="停止服务" name="btnStopServer"/>
+      <item title="开启连接" name="btnStartConnect"/>
+      <item title="生成家庭" name="btnSpawnFaimly"/>
+      <item title="开始模拟" name="btnStart"/>
+      <item title="暂停模拟" name="btnPause"/>
+      <item title="恢复模拟" name="btnResume"/>
+      <item title="停止模拟" name="btnStop"/>
+      <item title="退回主页面" name="btnReturnMain"/>
+      <item title="命令窗口" name="btnCommand"/>
+    </list>
+    <component id="n16_gri9" name="controlModeBtn" src="gri91b" fileName="Com/CheckedBtn.xml" pkg="f70pfjtk" xy="172,293" pivot="0.5,0.5" group="n14_jxy5"/>
+    <text id="n13_jxy5" name="n13" xy="208,292" pivot="0,0.5" size="127,29" group="n14_jxy5" fontSize="16" color="#ffffff" vAlign="middle" autoSize="none" text="是否操作村长"/>
+    <group id="n14_jxy5" name="n14" xy="172,292" size="163,29"/>
+    <loader id="n18_gri9" name="popBtn" xy="163,334" pivot="0.5,0.5" size="31,35" aspect="true" rotation="-90" url="ui://f70pfjtkgri91e" fill="scale" shrinkOnly="true"/>
+    <richtext id="n17_gri9" name="statusText" xy="13,292" size="149,29" fontSize="16" vAlign="middle" ubb="true" vars="true" autoSize="none" autoClearText="true" text="[color=#00ff00]• 模拟运行中[/color]"/>
+  </displayList>
+</component>

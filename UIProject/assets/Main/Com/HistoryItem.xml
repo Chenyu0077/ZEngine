@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="416,50">
+  <displayList>
+    <graph id="n0_ghhp" name="back" xy="0,0" pivot="0.5,0.5" size="416,50" type="rect" fillColor="#ffcccccc"/>
+    <richtext id="n2_ghhp" name="content" xy="0,0" pivot="0.5,0.5" size="416,50" fontSize="25" vAlign="middle" autoSize="none" text="&gt; 命令"/>
+  </displayList>
+</component>

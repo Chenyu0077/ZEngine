@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="516,1052" pivot="0.5,0.5" anchor="true">
+  <controller name="tab" pages="0,move,1,work,2,survive,3,social,4,observe,5,conflict" selected="0"/>
+  <controller name="dialogPop" pages="0,show,1,hide" selected="0"/>
+  <controller name="popCtrol" pages="0,hide,1,show" selected="0"/>
+  <controller name="comCtrol" pages="0,combox,1,input,2,none" selected="0"/>
+  <controller name="socialActionCtrol" pages="0,hide,1,show" selected="0"/>
+  <displayList>
+    <graph id="n0_actn" name="back" xy="0,0" size="516,1052" type="rect" lineSize="0" fillColor="#69000000" corner="12"/>
+    <text id="n1_actn" name="iconTitle" xy="154,11" pivot="0.5,0.5" size="35,35" fontSize="18" align="center" vAlign="middle" autoSize="none" text="🎯">
+      <relation target="n2_actn" sidePair="left-right"/>
+    </text>
+    <text id="n2_actn" name="titleLabel" xy="194,11" pivot="0.5,0.5" size="160,35" fontSize="20" color="#222222" vAlign="middle" autoSize="none" bold="true" text="选择行动"/>
+    <graph id="n3_actn" name="tabDivider" xy="34,103" pivot="0.5,0.5" size="454,2" group="n24_g1of" type="rect" lineSize="0" fillColor="#ffdddddd"/>
+    <graph id="n10_actn" name="tabUnderline" xy="33,103" pivot="0,0.5" size="72,2" group="n24_g1of" type="rect" lineSize="0" fillColor="#ffe8303a">
+      <gearXY controller="tab" pages="0,1,2,3,4,5" values="33,103|109,103|185,103|261,103|337,103|416,103"/>
+    </graph>
+    <component id="n4_actn" name="TabMove" src="k4vsa" fileName="Com/ComBtn.xml" xy="33,60" pivot="0.5,0.5" size="72,34" group="n24_g1of">
+      <Button title="移动" titleFontSize="12"/>
+    </component>
+    <component id="n5_actn" name="TabWork" src="k4vsa" fileName="Com/ComBtn.xml" xy="109,60" pivot="0.5,0.5" size="72,34" group="n24_g1of">
+      <Button title="劳作" titleFontSize="12"/>
+    </component>
+    <component id="n6_actn" name="TabSurvive" src="k4vsa" fileName="Com/ComBtn.xml" xy="185,60" pivot="0.5,0.5" size="72,34" group="n24_g1of">
+      <Button title="生存" titleFontSize="12"/>
+    </component>
+    <component id="n7_actn" name="TabSocial" src="k4vsa" fileName="Com/ComBtn.xml" xy="261,60" pivot="0.5,0.5" size="72,34" group="n24_g1of">
+      <Button title="社交" titleFontSize="12"/>
+    </component>
+    <component id="n8_actn" name="TabObserve" src="k4vsa" fileName="Com/ComBtn.xml" xy="337,60" pivot="0.5,0.5" size="72,34" group="n24_g1of">
+      <Button title="观察" titleFontSize="12"/>
+    </component>
+    <component id="n9_actn" name="TabConflict" src="k4vsa" fileName="Com/ComBtn.xml" xy="413,60" pivot="0.5,0.5" size="76,34" group="n24_g1of">
+      <Button title="冲突" titleFontSize="12"/>
+    </component>
+    <group id="n24_g1of" name="n24" xy="33,60" size="456,45"/>
+    <graph id="n77_gri9" name="tipBack" xy="33,192" size="458,93" group="n25_jxy5" type="rect" lineSize="0" fillColor="#ffcccccc"/>
+    <text id="n11_actn" name="toolLabel" xy="34,111" pivot="0.5,0.5" size="108,22" group="n25_jxy5" fontSize="14" color="#cccccc" vAlign="middle" autoSize="none" text="选择工具"/>
+    <component id="n13_actn" name="ToolComboBox" src="wg5ss" fileName="Com/ComboBox1.xml" xy="34,139" pivot="0.5,0.5" size="456,44" group="n25_jxy5">
+      <ComboBox title="进食 (eat)" visibleItemCount="6" direction="down" autoClearItems="true">
+        <item title="进食 (eat)"/>
+        <item title="睡觉 (sleep)"/>
+        <item title="休息 (rest)"/>
+        <item title="娱乐 (entertain)"/>
+      </ComboBox>
+    </component>
+    <component id="n84_gri9" name="tipInfoCom" src="cmeio" fileName="Com/ScrollText1.xml" xy="36,193" pivot="0.5,0.5" size="454,93" group="n25_jxy5"/>
+    <group id="n25_jxy5" name="n25" xy="33,111" size="458,175"/>
+    <text id="n33_jxy5" name="moveTip" xy="34,289" pivot="0.5,0.5" size="96,24" group="n32_jxy5" fontSize="16" vAlign="middle" autoSize="none" text="去哪里">
+      <gearDisplay controller="tab" pages="0"/>
+    </text>
+    <component id="n28_jxy5" name="MoveComboBox" src="wg5ss" fileName="Com/ComboBox1.xml" xy="34,320" pivot="0.5,0.5" size="456,44" group="n32_jxy5">
+      <gearDisplay controller="tab" pages="0"/>
+      <ComboBox title="村庄广场" visibleItemCount="6" direction="down" autoClearItems="true">
+        <item title="村庄广场"/>
+        <item title="农田"/>
+      </ComboBox>
+    </component>
+    <group id="n32_jxy5" name="n32" xy="34,289" size="456,75"/>
+    <text id="n35_jxy5" name="farmTip" xy="34,289" pivot="0.5,0.5" size="216,24" group="n36_jxy5" fontSize="16" vAlign="middle" autoSize="none" text="细节（可留空）">
+      <gearDisplay controller="tab" pages="1"/>
+    </text>
+    <graph id="n37_jxy5" name="farmInputback" xy="33,324" pivot="0.5,0.5" size="432,44" group="n36_jxy5" type="rect" lineSize="0" fillColor="#ffcccccc">
+      <gearDisplay controller="tab" pages="1"/>
+    </graph>
+    <text id="n34_jxy5" name="farmInput" xy="34,324" pivot="0,0.5" size="432,44" group="n36_jxy5" fontSize="20" vAlign="middle" autoSize="none" text="播种/浇水/收获" input="true">
+      <gearDisplay controller="tab" pages="1"/>
+    </text>
+    <group id="n36_jxy5" name="n36" xy="33,289" size="433,79"/>
+    <text id="n38_jxy5" name="surviceTip" xy="37,289" pivot="0.5,0.5" size="96,24" group="n40_jxy5" fontSize="16" vAlign="middle" autoSize="none" text="吃什么">
+      <gearDisplay controller="tab" pages="2"/>
+      <gearDisplay2 controller="comCtrol" pages="0" condition="0"/>
+    </text>
+    <component id="n39_jxy5" name="SurviceComboBox" src="wg5ss" fileName="Com/ComboBox1.xml" xy="35,320" pivot="0.5,0.5" size="456,44" group="n40_jxy5">
+      <gearDisplay controller="tab" pages="2"/>
+      <gearDisplay2 controller="comCtrol" pages="0" condition="0"/>
+      <ComboBox title="干粮" visibleItemCount="6" direction="down" autoClearItems="true">
+        <item title="干粮"/>
+      </ComboBox>
+    </component>
+    <text id="n68_jxy5" name="surviceTip1" xy="35,289" pivot="0.5,0.5" size="216,24" group="n40_jxy5" fontSize="16" vAlign="middle" autoSize="none" text="细节（可留空）">
+      <gearDisplay controller="tab" pages="2"/>
+      <gearDisplay2 controller="comCtrol" pages="1" condition="0"/>
+    </text>
+    <graph id="n69_jxy5" name="surviceInputback" xy="34,324" pivot="0.5,0.5" size="432,44" group="n40_jxy5" type="rect" lineSize="0" fillColor="#ffcccccc">
+      <gearDisplay controller="tab" pages="2"/>
+      <gearDisplay2 controller="comCtrol" pages="1" condition="0"/>
+    </graph>
+    <text id="n70_jxy5" name="surviceInput" xy="35,324" pivot="0,0.5" size="432,44" group="n40_jxy5" fontSize="20" vAlign="middle" autoSize="none" text="唱歌/讲故事" input="true">
+      <gearDisplay controller="tab" pages="2"/>
+      <gearDisplay2 controller="comCtrol" pages="1" condition="0"/>
+    </text>
+    <group id="n40_jxy5" name="n40" xy="34,289" size="457,79"/>
+    <text id="n41_jxy5" name="socialTip" xy="36,289" pivot="0.5,0.5" size="96,24" group="n43_jxy5" fontSize="16" vAlign="middle" autoSize="none" text="对象">
+      <gearDisplay controller="tab" pages="3"/>
+      <gearDisplay2 controller="comCtrol" pages="0,1" condition="0"/>
+    </text>
+    <component id="n42_jxy5" name="SocialComboBox" src="wg5ss" fileName="Com/ComboBox1.xml" xy="34,320" pivot="0.5,0.5" size="456,44" group="n43_jxy5">
+      <gearDisplay controller="tab" pages="3"/>
+      <gearDisplay2 controller="comCtrol" pages="0,1" condition="0"/>
+      <ComboBox title="周存仁" visibleItemCount="6" direction="down" autoClearItems="true">
+        <item title="周存仁"/>
+      </ComboBox>
+    </component>
+    <text id="n44_jxy5" name="socialTip1" xy="35,377" size="250,24" group="n43_jxy5" fontSize="16" vAlign="middle" autoSize="none" text="想说什么/协商主题">
+      <gearDisplay controller="tab" pages="3"/>
+      <gearDisplay2 controller="comCtrol" pages="1" condition="0"/>
+    </text>
+    <graph id="n46_jxy5" name="socialInputback" xy="34,410" size="451,44" group="n43_jxy5" type="rect" lineSize="0" fillColor="#ffcccccc">
+      <gearDisplay controller="tab" pages="3"/>
+      <gearDisplay2 controller="comCtrol" pages="1" condition="0"/>
+    </graph>
+    <text id="n47_jxy5" name="socialInput" xy="35,410" pivot="0,0.5" size="450,44" group="n43_jxy5" fontSize="20" vAlign="middle" autoSize="none" text="聊聊天气吧" input="true">
+      <gearDisplay controller="tab" pages="3"/>
+      <gearDisplay2 controller="comCtrol" pages="1" condition="0"/>
+    </text>
+    <text id="n71_jxy5" name="socialTip2" xy="36,377" pivot="0.5,0.5" size="96,24" group="n43_jxy5" fontSize="16" vAlign="middle" autoSize="none" text="物品">
+      <gearDisplay controller="tab" pages="3"/>
+      <gearDisplay2 controller="comCtrol" pages="0" condition="0"/>
+    </text>
+    <component id="n72_jxy5" name="itemComboBox" src="wg5ss" fileName="Com/ComboBox1.xml" xy="36,408" pivot="0.5,0.5" size="198,44" group="n43_jxy5">
+      <gearDisplay controller="tab" pages="3"/>
+      <gearDisplay2 controller="comCtrol" pages="0" condition="0"/>
+      <ComboBox title="铜钱" visibleItemCount="6" direction="down" autoClearItems="true">
+        <item title="铜钱"/>
+        <item title="村志"/>
+        <item title="干粮"/>
+      </ComboBox>
+    </component>
+    <graph id="n74_jxy5" name="socialInputback2" xy="250,411" size="234,38" group="n43_jxy5" type="rect" lineSize="0" fillColor="#ffcccccc">
+      <gearDisplay controller="tab" pages="3"/>
+      <gearDisplay2 controller="comCtrol" pages="0" condition="0"/>
+    </graph>
+    <text id="n75_jxy5" name="n75" xy="255,411" size="49,38" group="n43_jxy5" fontSize="20" align="center" vAlign="middle" autoSize="none" text="数量">
+      <gearDisplay controller="tab" pages="3"/>
+      <gearDisplay2 controller="comCtrol" pages="0" condition="0"/>
+    </text>
+    <text id="n73_jxy5" name="socialInput2" xy="312,411" size="172,38" group="n43_jxy5" fontSize="16" vAlign="middle" autoSize="none" text="" input="true">
+      <gearDisplay controller="tab" pages="3"/>
+      <gearDisplay2 controller="comCtrol" pages="0" condition="0"/>
+    </text>
+    <group id="n43_jxy5" name="n43" xy="34,289" size="456,165"/>
+    <text id="n48_jxy5" name="observeTip" xy="36,289" pivot="0.5,0.5" size="216,24" group="n51_jxy5" fontSize="16" vAlign="middle" autoSize="none" text="细节（可留空）">
+      <gearDisplay controller="tab" pages="4"/>
+      <gearDisplay2 controller="comCtrol" pages="1" condition="0"/>
+    </text>
+    <graph id="n49_jxy5" name="ovserveInputback" xy="35,324" pivot="0.5,0.5" size="432,44" group="n51_jxy5" type="rect" lineSize="0" fillColor="#ffcccccc">
+      <gearDisplay controller="tab" pages="4"/>
+      <gearDisplay2 controller="comCtrol" pages="1" condition="0"/>
+    </graph>
+    <text id="n50_jxy5" name="ovserveInput" xy="36,324" pivot="0,0.5" size="432,44" group="n51_jxy5" fontSize="20" vAlign="middle" autoSize="none" text="观察对象" input="true">
+      <gearDisplay controller="tab" pages="4"/>
+      <gearDisplay2 controller="comCtrol" pages="1" condition="0"/>
+    </text>
+    <group id="n51_jxy5" name="n51" xy="35,289" size="433,79"/>
+    <text id="n52_jxy5" name="conflictTip" xy="37,289" pivot="0.5,0.5" size="96,24" group="n54_jxy5" fontSize="16" vAlign="middle" autoSize="none" text="选择对象">
+      <gearDisplay controller="tab" pages="5"/>
+    </text>
+    <component id="n53_jxy5" name="ConflictComboBox" src="wg5ss" fileName="Com/ComboBox1.xml" xy="35,320" pivot="0.5,0.5" size="456,44" group="n54_jxy5">
+      <gearDisplay controller="tab" pages="5"/>
+      <ComboBox title="村庄广场" visibleItemCount="6" direction="down" autoClearItems="true">
+        <item title="村庄广场"/>
+        <item title="农田"/>
+      </ComboBox>
+    </component>
+    <text id="n79_gri9" name="attactTip" xy="37,374" pivot="0.5,0.5" size="96,24" group="n54_jxy5" fontSize="16" vAlign="middle" autoSize="none" text="攻击部位">
+      <gearDisplay controller="tab" pages="5"/>
+      <gearDisplay2 controller="comCtrol" pages="0" condition="0"/>
+    </text>
+    <component id="n78_gri9" name="attackComboBox" src="wg5ss" fileName="Com/ComboBox1.xml" xy="36,407" pivot="0.5,0.5" size="456,44" group="n54_jxy5">
+      <gearDisplay controller="tab" pages="5"/>
+      <gearDisplay2 controller="comCtrol" pages="0" condition="0"/>
+      <ComboBox title="村庄广场" visibleItemCount="6" direction="down" autoClearItems="true">
+        <item title="村庄广场"/>
+        <item title="农田"/>
+      </ComboBox>
+    </component>
+    <text id="n80_gri9" name="conflictInputTitle" xy="37,374" pivot="0.5,0.5" size="96,24" group="n54_jxy5" fontSize="16" vAlign="middle" autoSize="none" text="输入文本">
+      <gearDisplay controller="tab" pages="5"/>
+      <gearDisplay2 controller="comCtrol" pages="1" condition="0"/>
+    </text>
+    <graph id="n82_gri9" name="cinflictInputback" xy="38,408" size="450,44" group="n54_jxy5" type="rect" lineSize="0" fillColor="#ffcccccc">
+      <gearDisplay controller="tab" pages="5"/>
+      <gearDisplay2 controller="comCtrol" pages="1" condition="0"/>
+    </graph>
+    <text id="n81_gri9" name="cinflictInput" xy="38,408" pivot="0,0.5" size="450,44" group="n54_jxy5" fontSize="20" vAlign="middle" autoSize="none" text="文本或&lt;数量&gt; &lt;物品名&gt;" input="true">
+      <gearDisplay controller="tab" pages="5"/>
+      <gearDisplay2 controller="comCtrol" pages="1" condition="0"/>
+    </text>
+    <group id="n54_jxy5" name="n54" xy="35,289" size="457,163"/>
+    <graph id="n15_actn" name="btnDivider" xy="32,996" pivot="0.5,0.5" size="460,2" group="n55_jxy5" type="rect" lineSize="0" fillColor="#ffdddddd"/>
+    <graph id="n16_actn" name="btnExecBack" xy="42,1005" pivot="0.5,0.5" size="122,36" group="n55_jxy5" aspect="true" type="rect" lineSize="0" fillColor="#ffe8303a" corner="8"/>
+    <component id="n17_actn" name="BtnExec" src="k4vsa" fileName="Com/ComBtn.xml" xy="42,1005" pivot="0.5,0.5" size="122,36" group="n55_jxy5" aspect="true">
+      <Button title="▶ 执行" titleFontSize="18"/>
+    </component>
+    <component id="n66_jxy5" name="BtnIdle" src="k4vsa" fileName="Com/ComBtn.xml" xy="200,1005" pivot="0.5,0.5" size="122,36" group="n55_jxy5">
+      <Button title="挂机 1h" titleFontSize="18"/>
+    </component>
+    <group id="n55_jxy5" name="n55" xy="32,996" size="460,45"/>
+    <loader id="n85_gri9" name="btnPop" xy="512,454" pivot="0.5,0.5" size="31,35" aspect="true" rotation="180" url="ui://f70pfjtkgri91e" fill="scale" shrinkOnly="true"/>
+    <component id="n64_jxy5" name="socialActionPanel" src="jxy51k" fileName="Com/ActionSelectPanel.xml" xy="33,468" pivot="0.5,0.5" group="n61_jxy5">
+      <gearDisplay controller="tab" pages="3"/>
+      <gearDisplay2 controller="socialActionCtrol" pages="1" condition="0"/>
+    </component>
+    <graph id="n58_jxy5" name="dialogback" xy="32,700" size="456,291" group="n61_jxy5" type="rect" fillColor="#ffcccccc" corner="10">
+      <gearDisplay controller="dialogPop" pages="0"/>
+      <gearDisplay2 controller="socialActionCtrol" pages="1" condition="0"/>
+    </graph>
+    <graph id="n57_jxy5" name="dialogback1" xy="32,700" pivot="0.5,0.5" size="456,48" group="n61_jxy5" type="rect" corner="10">
+      <gearDisplay controller="socialActionCtrol" pages="1"/>
+    </graph>
+    <text id="n59_jxy5" name="dialogTitle" xy="72,712" pivot="0.5,0.5" size="68,24" group="n61_jxy5" fontSize="16" autoSize="none" text="对话记录">
+      <gearDisplay controller="socialActionCtrol" pages="1"/>
+    </text>
+    <graph id="n60_jxy5" name="dialogPopBtn" xy="44,713" pivot="0.5,0.5" size="20,20" group="n61_jxy5" type="regular_polygon" fillColor="#ff666666" sides="3">
+      <gearDisplay controller="socialActionCtrol" pages="1"/>
+      <gearLook controller="dialogPop" default="1,0,0,1"/>
+    </graph>
+    <component id="n63_jxy5" name="history" src="cmeio" fileName="Com/ScrollText1.xml" xy="35,753" size="449,236" group="n61_jxy5">
+      <gearDisplay controller="dialogPop" pages="0"/>
+      <gearDisplay2 controller="socialActionCtrol" pages="1" condition="0"/>
+    </component>
+    <group id="n61_jxy5" name="n61" xy="32,468" size="457,523" advanced="true">
+      <gearDisplay controller="tab" pages="3"/>
+    </group>
+    <component id="n65_jxy5" name="statusPanel" src="jxy51i" fileName="Com/StatusPanel.xml" xy="34,581" pivot="0.5,0.5" size="446,380">
+      <gearDisplay controller="tab" pages="0,1,2,4,5"/>
+    </component>
+    <graph id="n83_gri9" name="mask" xy="0,-1" pivot="0.5,0.5" size="516,1052" visible="false" touchable="false" type="rect" lineSize="0" fillColor="#99000000" corner="12"/>
+  </displayList>
+</component>

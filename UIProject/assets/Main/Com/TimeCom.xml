@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="238,80">
+  <displayList>
+    <graph id="n0_k2bk" name="back" xy="0,0" size="238,80" type="rect" lineSize="0" fillColor="#4c000000" corner="10"/>
+    <text id="n1_jxy5" name="title1" xy="18,5" pivot="0.5,0.5" size="50,32" fontSize="22" color="#ffffff" bold="true" text="时间">
+      <relation target="" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n2_jxy5" name="Days" xy="130,8" pivot="0,0.5" size="98,26" fontSize="16" color="#ffffff" vAlign="middle" autoSize="none" text="Day 2 14:00">
+      <relation target="n1_jxy5" sidePair="left-right"/>
+    </text>
+    <text id="n3_jxy5" name="title2" xy="18,40" pivot="0.5,0.5" size="96,32" fontSize="22" color="#ffffff" bold="true" text="存活比例">
+      <relation target="" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n4_jxy5" name="SurvivalRatio" xy="130,43" pivot="0.5,0.5" size="72,26" fontSize="16" color="#ffffff" vAlign="middle" autoSize="none" text="24/25">
+      <relation target="n3_jxy5" sidePair="left-right"/>
+    </text>
+  </displayList>
+</component>

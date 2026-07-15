@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="500,600" pivot="0.5,0.5" anchor="true" bgColor="#000000">
+  <displayList>
+    <graph id="n0_ghhp" name="back" xy="0,0" pivot="0.5,0.5" size="500,600" type="rect" lineSize="0" fillColor="#73000000" corner="10"/>
+    <graph id="n8_ghhp" name="listBack" xy="30,108" pivot="0.5,0.5" size="422,248" type="rect" lineSize="2" fillColor="#00ffffff"/>
+    <text id="n3_ghhp" name="Title" xy="33,24" pivot="0.5,0.5" size="394,50" fontSize="25" color="#ffffff" vAlign="middle" autoSize="none" text="NPC命令窗口 - [村长]"/>
+    <list id="n2_ghhp" name="HistoryList" xy="30,108" pivot="0.5,0.5" size="422,248" overflow="scroll" defaultItem="ui://q0la9fq0ghhpl" align="center" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n4_ghhp" name="BtnSend" src="ixn42" fileName="Com/CommonBtn1.xml" pkg="f70pfjtk" xy="398,387" pivot="0.5,0.5" size="86,40">
+      <Button title="发送" titleFontSize="20"/>
+    </component>
+    <richtext id="n6_ghhp" name="ResultText" xy="31,546" pivot="0.5,0.5" size="438,43" fontSize="25" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" text="[color=#00ff00][OK] 任务已入队: {result.Task.Type}[color]"/>
+    <component id="n7_ghhp" name="BtnClose" src="ixn44" fileName="Com/CloseBtn1.xml" pkg="f70pfjtk" xy="453,29" pivot="0.5,0.5" size="36,36">
+      <Button title="X"/>
+    </component>
+    <graph id="n11_cmei" name="inputback" xy="30,381" pivot="0.5,0.5" size="348,49" group="n12_cmei" type="rect" lineSize="0" fillColor="#00cccccc"/>
+    <text id="n1_ghhp" name="Input" xy="30,381" pivot="0.5,0.5" size="348,49" group="n12_cmei" fontSize="25" color="#ffffff" vAlign="middle" autoSize="none" text="" input="true"/>
+    <group id="n12_cmei" name="n12" xy="30,381" size="348,49"/>
+    <graph id="n13_cmei" name="hintback" xy="31,438" pivot="0.5,0.5" size="438,94" group="n14_cmei" type="rect" lineSize="0" fillColor="#00cccccc"/>
+    <component id="n10_cmei" name="HintText" src="cmeio" fileName="Com/ScrollText1.xml" xy="31,438" pivot="0.5,0.5" size="438,94" group="n14_cmei"/>
+    <group id="n14_cmei" name="n14" xy="31,438" size="438,94"/>
+  </displayList>
+</component>

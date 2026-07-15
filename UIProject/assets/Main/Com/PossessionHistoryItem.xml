@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="500,64" pivot="0.5,0.5">
+  <displayList>
+    <graph id="n0_phs2" name="back" xy="0,0" size="500,64" type="rect" lineSize="0" fillColor="#00000000" corner="6"/>
+    <graph id="n1_phs2" name="accentBar" xy="0,8" size="3,48" type="rect" lineSize="0" fillColor="#ff44ff88"/>
+    <text id="n2_phs2" name="hourLabel" xy="10,0" size="52,64" fontSize="13" color="#888888" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="06:00"/>
+    <text id="n3_phs2" name="iconText" xy="66,0" size="28,64" fontSize="14" color="#44ff88" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="OK"/>
+    <text id="n4_phs2" name="actionLabel" xy="98,4" size="120,28" fontSize="15" color="#ffffff" vAlign="middle" autoSize="none" bold="true" autoClearText="true" text="日常劳作"/>
+    <text id="n5_phs2" name="summaryText" xy="98,32" size="340,28" fontSize="12" color="#aaaaaa" vAlign="middle" autoSize="none" autoClearText="true" text="你卖力地日常工作，体力-15。"/>
+    <graph id="n6_phs2" name="deltaBg" xy="444,18" size="52,28" type="rect" lineSize="0" fillColor="#44ff8844" corner="4"/>
+    <text id="n7_phs2" name="deltaText" xy="444,18" size="52,28" fontSize="11" color="#88ff88" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="体力-15"/>
+    <graph id="n8_phs2" name="dialogueBadgeBg" xy="394,18" size="44,28" type="rect" lineSize="0" fillColor="#4488aaff" corner="4"/>
+    <text id="n9_phs2" name="dialogueBadge" xy="394,18" size="44,28" fontSize="11" color="#88ccff" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="对话"/>
+    <graph id="n10_phs2" name="divider" xy="10,63" size="480,2" type="rect" lineSize="0" fillColor="#22ffffff"/>
+  </displayList>
+</component>

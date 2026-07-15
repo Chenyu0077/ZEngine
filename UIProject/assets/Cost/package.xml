@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="cost_pkg" hasFavorites="true">
+  <resources>
+    <folder id="/Com/" name="Com" path="/" favorite="true"/>
+    <folder id="/View/" name="View" path="/" favorite="true"/>
+    <component id="cost_main" name="CostView.xml" path="/View/" exported="true" favorite="true"/>
+    <component id="cost_header" name="CostHeaderPanel.xml" path="/Com/" exported="true"/>
+    <component id="cost_basic" name="CostBasicInfoPanel.xml" path="/Com/" exported="true"/>
+    <component id="cost_cumulative" name="CostCumulativePanel.xml" path="/Com/" exported="true"/>
+    <component id="cost_average" name="CostAveragePanel.xml" path="/Com/" exported="true"/>
+    <component id="cost_village" name="CostVillagePanel.xml" path="/Com/" exported="true"/>
+    <component id="cost_cache" name="CostCachePanel.xml" path="/Com/" exported="true"/>
+    <component id="cost_models" name="CostModelsPanel.xml" path="/Com/" exported="true"/>
+    <component id="cost_list_item" name="ModelListItem.xml" path="/Com/" exported="true"/>
+    <component id="cost_toggle" name="ToggleBtn.xml" path="/Com/" exported="true"/>
+    <component id="cost_progress" name="ProgressBar.xml" path="/Com/" exported="true"/>
+    <component id="cost_small_progress" name="SmallProgress.xml" path="/Com/" exported="true"/>
+    <misc id="jxy51x4wgtt" name="README.md" path="/"/>
+    <component id="jxy51x4wgtw" name="CloseBtn.xml" path="/Com/" exported="true"/>
+    <component id="jxy51x4wgty" name="RefreshBtn.xml" path="/Com/" exported="true"/>
+  </resources>
+  <publish name="Cost" genCode="true"/>
+</packageDescription>

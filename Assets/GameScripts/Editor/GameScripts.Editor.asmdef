@@ -1,0 +1,27 @@
+{
+    "name": "GameScripts.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b822112b1095644469e11463d84a8f1d",
+        "GUID:ce8f5df51a1e7fb49829a829318b7435",
+        "GUID:fb55c06547d68094aadb7fa783759d17",
+        "GUID:ed8cdd8bbf3a6a040a176c5f6cbae71a",
+        "GUID:f4b3c9b258b9720429457195d5c71510",
+        "GUID:bce341d149920a9428218f831c961a95",
+        "GUID:18d7df514cc26af4b86dbcb5d205ae94",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:6429fb7304d831c4b9e1ae17215fee1c",
+        "GUID:c98024240e2200544a481e220f8ffff0"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <graph id="n11_ixn4" name="back" xy="0,0" size="1920,1080" type="rect">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <list id="n14_jxy5" name="btnList" xy="1362,435" pivot="0.5,0.5" size="300,498" lineGap="40" defaultItem="ui://f70pfjtkixn42" align="center" vAlign="middle">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <item title="开始游戏" name="StartGameBtn"/>
+      <item title="设置" name="SettingsBtn"/>
+      <item title="退出" name="ExitBtn"/>
+    </list>
+  </displayList>
+</component>

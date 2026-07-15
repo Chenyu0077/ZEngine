@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="25,25" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <image id="n4_gri9" name="n4" src="gri91c" fileName="Res/Icon/gui_03_slider_01_button.png" xy="0,0" pivot="0.5,0.5" size="25,25">
+      <relation target="" sidePair=""/>
+    </image>
+    <image id="n0_gri9" name="n0" src="gri91a" fileName="Res/Icon/gui_01_checkbox_01.png" xy="4,4" pivot="0.5,0.5" size="18,18">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair=""/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>

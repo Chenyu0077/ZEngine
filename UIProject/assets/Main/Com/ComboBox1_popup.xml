@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="435,200">
+  <displayList>
+    <graph id="n0_wg5s" name="n0" xy="0,0" size="435,200" touchable="false" type="rect" lineColor="#ffa0a0a0" fillColor="#fff0f0f0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <list id="n1_wg5s" name="list" xy="0,0" size="435,200" overflow="scroll" defaultItem="ui://q0la9fq0wg5sq">
+      <relation target="" sidePair="width-width"/>
+    </list>
+  </displayList>
+  <relation target="n1_wg5s" sidePair="height-height"/>
+</component>

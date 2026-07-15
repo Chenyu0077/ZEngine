@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="480,520" pivot="0.5,0.5" anchor="true">
+  <controller name="tabCtrol" pages="0,family,1,history" selected="1"/>
+  <controller name="activeCtrol" pages="0,hide,1,show" selected="1"/>
+  <displayList>
+    <graph id="n0_tax" name="back" xy="0,0" size="480,520" type="rect" lineSize="0" fillColor="#cc000000" corner="12">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+    </graph>
+    <text id="n1_tax" name="title" xy="20,14" size="200,32" fontSize="20" color="#ffdd88" vAlign="middle" autoSize="none" bold="true" text="县衙赋税">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+    </text>
+    <text id="n2_tax" name="cycleLabel" xy="240,14" size="220,32" fontSize="15" color="#ffffff" align="right" vAlign="middle" autoSize="none" text="第1期 · 剩3天">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+    </text>
+    <text id="n3_tax" name="deadlineLabel" xy="20,48" size="200,22" fontSize="13" color="#aaaaaa" vAlign="middle" autoSize="none" text="截至第3天">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+    </text>
+    <graph id="n4_tax" name="progressBg" xy="20,76" size="440,14" type="rect" lineSize="0" fillColor="#ff444444" corner="7">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+    </graph>
+    <graph id="n5_tax" name="progressFill" xy="20,76" size="100,14" type="rect" lineSize="0" fillColor="#ff44ff88" corner="7">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+    </graph>
+    <text id="n6_tax" name="progressText" xy="20,96" size="440,24" fontSize="14" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="35 / 250">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+    </text>
+    <richtext id="n17_gri9" name="debtLabel" xy="20,124" size="200,22" fontSize="14" color="#ffaa88" vAlign="middle" ubb="true" vars="true" autoSize="none" text="滚欠: 0">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+    </richtext>
+    <richtext id="n18_gri9" name="strikesLabel" xy="250,124" size="210,22" fontSize="14" color="#ffaa88" align="right" vAlign="middle" ubb="true" vars="true" autoSize="none" text="记过: 0/2">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+    </richtext>
+    <component id="n9_tax" name="settleBtn" src="k4vsa" fileName="Com/ComBtn.xml" xy="140,152" pivot="0.5,0.5" size="200,38">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+      <Button title="上缴县衙" titleFontSize="16"/>
+    </component>
+    <graph id="n10_tax" name="divider" xy="20,198" size="440,1" type="rect" lineSize="0" fillColor="#44ffffff">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+    </graph>
+    <component id="n11_tax" name="TabFamily" src="o6bch" fileName="Com/TagBtn.xml" xy="120,208" pivot="0.5,0.5" size="90,32">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+      <Button title="家庭" titleFontSize="14"/>
+    </component>
+    <component id="n12_tax" name="TabHistory" src="o6bch" fileName="Com/TagBtn.xml" xy="270,208" pivot="0.5,0.5" size="90,32">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+      <Button title="历史" titleFontSize="14"/>
+    </component>
+    <graph id="n13_tax" name="tabUnderline" xy="270,238" size="90,2" type="rect" lineSize="0" fillColor="#ffee3333">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+      <gearXY controller="tabCtrol" pages="0,1" values="120,238|270,238"/>
+    </graph>
+    <list id="n14_tax" name="familyList" xy="20,248" size="440,260" overflow="scroll" lineGap="4" defaultItem="ui://q0la9fq0tax002" autoClearItems="true">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+      <gearDisplay2 controller="tabCtrol" pages="0" condition="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n15_tax" name="historyList" xy="20,248" size="440,260" overflow="scroll" lineGap="4" defaultItem="ui://q0la9fq0tax003" autoClearItems="true">
+      <gearDisplay controller="activeCtrol" pages="1"/>
+      <gearDisplay2 controller="tabCtrol" pages="1" condition="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <loader id="n20_gri9" name="popBtn" xy="225,514" pivot="0.5,0.5" size="31,35" aspect="true" rotation="-90" url="ui://f70pfjtkgri91e" fill="scale" shrinkOnly="true"/>
+  </displayList>
+</component>

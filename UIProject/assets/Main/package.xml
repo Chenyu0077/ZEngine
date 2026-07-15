@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="q0la9fq0" hasFavorites="true">
+  <resources>
+    <folder id="/Com/" name="Com" path="/" favorite="true"/>
+    <component id="ixn40" name="MainView.xml" path="/View/" exported="true"/>
+    <component id="ixn41" name="ArchiveView.xml" path="/View/" exported="true"/>
+    <component id="ixn42" name="SettingsView.xml" path="/View/" exported="true"/>
+    <component id="ixn43" name="IntroduceView.xml" path="/View/" exported="true"/>
+    <component id="ixn44" name="ArchiveCom.xml" path="/Com/" exported="true" favorite="true"/>
+    <component id="ppje5" name="LoadingView.xml" path="/View/" exported="true"/>
+    <component id="k9hz6" name="AddBtn.xml" path="/Com/" exported="true"/>
+    <component id="k4vs7" name="CharacterSelect.xml" path="/View/" exported="true"/>
+    <component id="k4vs8" name="Card.xml" path="/Com/" exported="true"/>
+    <component id="k4vsa" name="ComBtn.xml" path="/Com/" exported="true"/>
+    <component id="o6bcb" name="NPCMenuView.xml" path="/View/" exported="true"/>
+    <component id="o6bcd" name="MenuBtn.xml" path="/Com/" exported="true"/>
+    <component id="o6bce" name="NPCInfoView.xml" path="/View/" exported="true"/>
+    <component id="o6bcg" name="NPCMainView.xml" path="/View/" exported="true"/>
+    <component id="o6bch" name="TagBtn.xml" path="/Com/" exported="true"/>
+    <component id="w3fri" name="GameControlView.xml" path="/View/" exported="true"/>
+    <component id="hx1rj" name="ScrollText.xml" path="/Com/" exported="true"/>
+    <component id="ghhpk" name="NPCCommandView.xml" path="/View/" exported="true"/>
+    <component id="ghhpl" name="HistoryItem.xml" path="/Com/" exported="true"/>
+    <component id="broxm" name="WaitingView.xml" path="/View/" exported="true"/>
+    <component id="cmeio" name="ScrollText1.xml" path="/Com/" exported="true"/>
+    <component id="bbl0n" name="NPCBubble.xml" path="/Com/" exported="true"/>
+    <component id="wg5sp" name="GameConfigView.xml" path="/View/" exported="true"/>
+    <component id="wg5sq" name="ComboBox1_item.xml" path="/Com/" exported="true"/>
+    <component id="wg5sr" name="ComboBox1_popup.xml" path="/Com/" exported="true"/>
+    <component id="wg5ss" name="ComboBox1.xml" path="/Com/" exported="true"/>
+    <component id="wg5st" name="VillageLogView.xml" path="/View/" exported="true"/>
+    <component id="wg5su" name="GamePermanceView.xml" path="/View/" exported="true"/>
+    <component id="k2bkv" name="TimeCom.xml" path="/Com/" exported="true"/>
+    <component id="jxy515" name="CheckBtn.xml" path="/Com/" exported="true"/>
+    <component id="jxy51c" name="TipView.xml" path="/View/" exported="true"/>
+    <component id="jxy51f" name="InteractView.xml" path="/View/" exported="true"/>
+    <component id="jxy51g" name="InventoryItem.xml" path="/Com/" exported="true"/>
+    <component id="jxy51h" name="StatusBarItem.xml" path="/Com/" exported="true"/>
+    <component id="jxy51i" name="StatusPanel.xml" path="/Com/" exported="true"/>
+    <component id="jxy51k" name="ActionSelectPanel.xml" path="/Com/" exported="true"/>
+    <component id="jxy51m" name="ActionBtn.xml" path="/Com/" exported="true"/>
+    <component id="jxy51n" name="StoryView.xml" path="/View/" exported="true"/>
+    <component id="jxy51o" name="GameOverView.xml" path="/View/" exported="true"/>
+    <component id="kgdi1p" name="NPCCombox_item.xml" path="/Com/" exported="true"/>
+    <component id="kgdi1q" name="NPCCombox_popup.xml" path="/Com/" exported="true"/>
+    <component id="kgdi1r" name="NPCCombox.xml" path="/Com/" exported="true"/>
+    <component id="cl9k1s" name="BtnConfig.xml" path="/Com/" exported="true"/>
+    <component id="cl9k1t" name="BtnCost.xml" path="/Com/" exported="true"/>
+    <component id="gri91u" name="ItemCategory.xml" path="/Com/" exported="true"/>
+    <component id="gri91v" name="ShortTipView.xml" path="/View/" exported="true"/>
+    <component id="tax001" name="TaxView.xml" path="/View/" exported="true"/>
+    <component id="tax002" name="TaxFamilyItem.xml" path="/Com/" exported="true"/>
+    <component id="tax003" name="TaxHistoryItem.xml" path="/Com/" exported="true"/>
+    <component id="gri91x" name="MaxTipView.xml" path="/View/" exported="true"/>
+    <component id="phs001" name="PossessionHistoryView.xml" path="/View/" exported="true"/>
+    <component id="phs002" name="PossessionHistoryItem.xml" path="/Com/" exported="true"/>
+    <component id="phs003" name="PossessionTranscriptItem.xml" path="/Com/" exported="true"/>
+    <component id="phs004" name="PossessionDayBtn.xml" path="/Com/" exported="true"/>
+    <component id="set001g" name="SettingsSlider_grip.xml" path="/Com/"/>
+    <component id="set001s" name="SettingsSlider.xml" path="/Com/"/>
+  </resources>
+  <publish name="Main" genCode="true"/>
+</packageDescription>

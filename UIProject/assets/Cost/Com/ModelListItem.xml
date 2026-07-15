@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="960,30">
+  <displayList>
+    <graph id="n0" name="itemBg" xy="0,0" size="960,30" type="rect" fillColor="#7fecf0f1"/>
+    <text id="n1" name="txtModelName" xy="20,7" size="111,19" fontSize="12" color="#2c3e50" vAlign="middle" text="deepseek-v4-flash"/>
+    <text id="n2" name="txtTokens" xy="240,7" size="32,19" fontSize="12" color="#2c3e50" align="center" vAlign="middle" text="9.9M"/>
+    <text id="n3" name="txtCostUsd" xy="360,7" size="43,19" fontSize="12" color="#e74c3c" align="center" vAlign="middle" text="$0.738"/>
+    <text id="n4" name="txtCostCny" xy="480,7" size="36,19" fontSize="12" color="#e74c3c" align="center" vAlign="middle" text="¥5.02"/>
+    <text id="n5" name="txtCacheRate" xy="707,7" size="47,19" fontSize="12" color="#27ae60" align="center" vAlign="middle" text="65.25%"/>
+    <component id="n9_jxy5" name="cacheProgressBar" src="cost_progress" fileName="Com/ProgressBar.xml" xy="600,8" pivot="0.5,0.5">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <text id="n7" name="txtCallCount" xy="770,7" size="36,19" fontSize="12" color="#95a5a6" align="center" vAlign="middle" text="1,234"/>
+    <graph id="n8_separator1" name="separator1" xy="230,0" size="1,30" type="rect" fillColor="#ffbdc3c7"/>
+    <graph id="n8_separator2" name="separator2" xy="350,0" size="1,30" type="rect" fillColor="#ffbdc3c7"/>
+    <graph id="n8_separator3" name="separator3" xy="470,0" size="1,30" type="rect" fillColor="#ffbdc3c7"/>
+    <graph id="n8_separator4" name="separator4" xy="590,0" size="1,30" type="rect" fillColor="#ffbdc3c7"/>
+    <graph id="n8_separator5" name="separator5" xy="760,0" size="1,30" type="rect" fillColor="#ffbdc3c7"/>
+  </displayList>
+  <transition name="hover">
+    <item time="0" type="Color" target="n0" tween="true" startValue="#ecf0f1" endValue="#d5dbdb" duration="15"/>
+  </transition>
+  <transition name="leave">
+    <item time="0" type="Color" target="n0" tween="true" startValue="#d5dbdb" endValue="#ecf0f1" duration="15"/>
+  </transition>
+</component>

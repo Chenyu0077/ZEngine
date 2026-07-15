@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 185f6993d5150494d98da50e26cb1c25, type: 3}
+  m_Name: AssetBundleCollectorSetting
+  m_EditorClassIdentifier: 
+  ShowPackageView: 1
+  ShowEditorAlias: 1
+  UniqueBundleName: 0
+  Packages:
+  - PackageName: DefaultPackage
+    PackageDesc: 
+    EnableAddressable: 1
+    LocationToLower: 0
+    IncludeAssetGUID: 0
+    AutoCollectShaders: 1
+    IgnoreRuleName: NormalIgnoreRule
+    Groups:
+    - GroupName: Audios
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameAssets/Audios
+        CollectorGUID: e7b95b0bb0512b248a68639f07a1a98d
+        CollectorType: 0
+        AddressRuleName: AddressDisable
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Configs
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameAssets/Configs
+        CollectorGUID: 7f1be6af8a2a42a41a097f8f80dfc7cc
+        CollectorType: 0
+        AddressRuleName: AddressDisable
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: FGUI
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameAssets/FGUI
+        CollectorGUID: dcea8f6347759794d96220b2bff882a3
+        CollectorType: 0
+        AddressRuleName: AddressDisable
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: HotfixDlls
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameAssets/HotfixDlls
+        CollectorGUID: 1964bce4915674a49a7499865a2434ec
+        CollectorType: 0
+        AddressRuleName: AddressDisable
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Materials
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameAssets/Materials
+        CollectorGUID: 07394f7b4a7a44a4fb8312b41b11e715
+        CollectorType: 0
+        AddressRuleName: AddressDisable
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Prefabs
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameAssets/prefabs
+        CollectorGUID: 65b17e2b69120cd49a2f0e65d4d4e5e0
+        CollectorType: 0
+        AddressRuleName: AddressDisable
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Scenes
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameAssets/Scenes
+        CollectorGUID: 6053e47303f4b944598dcc1b48aba097
+        CollectorType: 0
+        AddressRuleName: AddressDisable
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Shaders
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameAssets/Shaders
+        CollectorGUID: 56226e382094f4b4c909ba8f986480ae
+        CollectorType: 0
+        AddressRuleName: AddressDisable
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: SO
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameAssets/SO
+        CollectorGUID: 1bf4acc537a32e44981a378679bb3e2a
+        CollectorType: 0
+        AddressRuleName: AddressDisable
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Sprites
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameAssets/Sprites
+        CollectorGUID: 5da9374a19ea0aa48af00dfda78140a8
+        CollectorType: 0
+        AddressRuleName: AddressDisable
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Textures
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameAssets/Textures
+        CollectorGUID: 66ed1091d14215845b8c74f7e72ff6ce
+        CollectorType: 0
+        AddressRuleName: AddressDisable
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 

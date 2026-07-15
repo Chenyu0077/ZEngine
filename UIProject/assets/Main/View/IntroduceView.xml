@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <graph id="n0_ixn4" name="back" xy="0,0" size="1920,1080" type="rect" fillColor="#ff6699cc"/>
+    <text id="n1_ixn4" name="text" xy="195,215" size="1368,471" aspect="true" fontSize="49" align="center" vAlign="middle" autoSize="none" text="鲱鱼大佬" input="true">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </text>
+    <component id="n3_ixn4" name="CloseBtn" src="ixn44" fileName="Com/CloseBtn1.xml" pkg="f70pfjtk" xy="1633,105">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+  </displayList>
+</component>

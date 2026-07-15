@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <graph id="n12_yadn" name="back" xy="0,0" size="1920,1080" type="rect" lineSize="0" fillColor="#fff0e6d2"/>
+    <component id="n0_ixn4" name="CloseBtn" src="ixn44" fileName="Com/CloseBtn1.xml" pkg="f70pfjtk" xy="1799,63" size="56,56" aspect="true">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+    <text id="n_title" name="PanelTitle" xy="160,80" size="300,80" fontSize="48" color="#3a2a1a" vAlign="middle" autoSize="none" bold="true" text="设  置"/>
+    <graph id="n_titleline" name="titleLine" xy="160,158" size="1600,3" type="rect" lineSize="0" fillColor="#ffc8b08a"/>
+    <text id="n_lang_label" name="LangLabel" xy="160,220" size="200,52" fontSize="30" color="#3a2a1a" vAlign="middle" autoSize="none" bold="true" text="语言"/>
+    <text id="n_lang_tip" name="LangTip" xy="160,272" size="460,36" fontSize="20" color="#8a7055" vAlign="middle" autoSize="none" text="选择界面显示语言"/>
+    <component id="n1_ixn4" name="LangSettings" src="ixn4d" fileName="Com/ComboBox1.xml" pkg="f70pfjtk" xy="700,232" pivot="0,0.5" size="420,52">
+      <ComboBox visibleItemCount="10">
+        <item title="中文"/>
+        <item title="English"/>
+      </ComboBox>
+    </component>
+    <graph id="n_line0" name="line0" xy="160,326" size="1600,1" type="rect" lineSize="0" fillColor="#ffc8b08a"/>
+    <text id="n_res_label" name="ResLabel" xy="160,360" size="200,52" fontSize="30" color="#3a2a1a" vAlign="middle" autoSize="none" bold="true" text="分辨率"/>
+    <text id="n_res_tip" name="ResTip" xy="160,412" size="520,36" fontSize="20" color="#8a7055" vAlign="middle" autoSize="none" text="更改后点击保存生效，全屏建议使用原生分辨率"/>
+    <component id="n_resSettings" name="ResolutionSettings" src="ixn4d" fileName="Com/ComboBox1.xml" pkg="f70pfjtk" xy="700,372" pivot="0,0.5" size="420,52">
+      <ComboBox visibleItemCount="10">
+        <item title="1920 x 1080"/>
+        <item title="1680 x 1050"/>
+        <item title="1600 x 900"/>
+        <item title="1440 x 900"/>
+        <item title="1366 x 768"/>
+        <item title="1280 x 720"/>
+        <item title="1024 x 768"/>
+      </ComboBox>
+    </component>
+    <component id="n_btnFullscreen" name="BtnFullscreen" src="jxy515" fileName="Com/CheckBtn.xml" xy="1160,372" pivot="0,0.5" size="180,52">
+      <Button title="全屏" titleFontSize="20"/>
+    </component>
+    <component id="n_btnWindowed" name="BtnWindowed" src="jxy515" fileName="Com/CheckBtn.xml" xy="1360,372" pivot="0,0.5" size="180,52">
+      <Button title="窗口" titleFontSize="20"/>
+    </component>
+    <graph id="n_line1" name="line1" xy="160,456" size="1600,1" type="rect" lineSize="0" fillColor="#ffc8b08a"/>
+    <text id="n_music_label" name="MusicLabel" xy="160,490" size="200,52" fontSize="30" color="#3a2a1a" vAlign="middle" autoSize="none" bold="true" text="音乐音量"/>
+    <text id="n_music_tip" name="MusicTip" xy="160,542" size="460,36" fontSize="20" color="#8a7055" vAlign="middle" autoSize="none" text="背景音乐的音量大小"/>
+    <component id="n13_kfm1" name="MusicSlider" src="set001s" fileName="Com/SettingsSlider.xml" xy="700,503" pivot="0,0.5" size="560,22">
+      <Slider value="50" max="100"/>
+    </component>
+    <text id="n_musicval" name="MusicVal" xy="1278,512" pivot="0,0.5" size="60,36" fontSize="24" color="#3a2a1a" align="center" vAlign="middle" autoSize="none" text="50"/>
+    <graph id="n_line2" name="line2" xy="160,580" size="1600,1" type="rect" lineSize="0" fillColor="#ffc8b08a"/>
+    <text id="n_voice_label" name="VoiceLabel" xy="160,614" size="200,52" fontSize="30" color="#3a2a1a" vAlign="middle" autoSize="none" bold="true" text="音效音量"/>
+    <text id="n_voice_tip" name="VoiceTip" xy="160,666" size="460,36" fontSize="20" color="#8a7055" vAlign="middle" autoSize="none" text="游戏音效与交互音效的音量大小"/>
+    <component id="n14_kfm1" name="VoiceSlider" src="set001s" fileName="Com/SettingsSlider.xml" xy="700,625" pivot="0,0.5" size="560,22">
+      <Slider value="50" max="100"/>
+    </component>
+    <text id="n_voiceval" name="VoiceVal" xy="1278,634" pivot="0,0.5" size="60,36" fontSize="24" color="#3a2a1a" align="center" vAlign="middle" autoSize="none" text="50"/>
+    <graph id="n_line3" name="line3" xy="160,708" size="1600,1" type="rect" lineSize="0" fillColor="#ffc8b08a"/>
+    <component id="n_btnConfirm" name="BtnConfirm" src="k4vsa" fileName="Com/ComBtn.xml" xy="700,770" pivot="0,0.5" size="420,56">
+      <Button title="保 存 设 置" titleFontSize="22"/>
+    </component>
+  </displayList>
+</component>

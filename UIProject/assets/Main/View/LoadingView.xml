@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <graph id="n0_ppje" name="back" xy="0,0" size="1920,1080" type="rect" lineColor="#ffffffff" fillColor="#ff6699cc"/>
+    <text id="n2_ppje" name="ProgressValue" xy="1468,773" size="150,72" aspect="true" fontSize="37" align="center" vAlign="middle" autoSize="none" text="100%"/>
+    <component id="n4_kfm1" name="ProgressBar" src="kfm1m" fileName="Com/Slider1.xml" pkg="f70pfjtk" xy="485,815" pivot="0.5,0.5" size="900,10">
+      <Slider value="50" max="100"/>
+    </component>
+    <text id="n5_lzo6" name="TipText" xy="508,316" pivot="0.5,0.5" size="912,215" fontSize="46" align="center" vAlign="middle" autoSize="none" text="">
+      <relation target="" sidePair="center-center"/>
+    </text>
+  </displayList>
+</component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="320,36" opaque="false">
+  <displayList>
+    <text id="n0_ivi" name="dot" xy="4,8" size="12,20" fontSize="14" color="#666666" vAlign="middle" touchable="false" text="·"/>
+    <text id="n1_ivi" name="itemName" xy="18,8" size="160,20" fontSize="14" color="#333333" vAlign="middle" touchable="false" text="铜钱"/>
+    <text id="n2_ivi" name="itemCount" xy="180,8" size="40,20" fontSize="14" color="#333333" vAlign="middle" touchable="false" text="× 15"/>
+    <text id="n3_ivi" name="itemCategory" xy="226,8" size="90,20" fontSize="12" color="#999999" vAlign="middle" touchable="false" text="[ItemCategory.CURRENCY]"/>
+  </displayList>
+</component>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="960,60">
+  <controller name="runStatus" pages="0,normal,1,error" selected="0"/>
+  <displayList>
+    <graph id="n0_bg" name="basicBg" xy="0,0" size="960,60" type="rect" fillColor="#7f34495e" corner="8"/>
+    <text id="n1_dayLabel" name="dayLabel" xy="30,15" size="56,19" fontSize="12" color="#bdc3c7" vAlign="middle" text="当前天数:"/>
+    <text id="n1_dayValue" name="dayValue" xy="30,30" size="54,22" fontSize="14" color="#ffffff" vAlign="middle" text="第 15 天"/>
+    <graph id="n2_sep1" name="separator1" xy="150,10" size="1,40" type="rect" fillColor="#ff7f8c8d"/>
+    <text id="n3_npcLabel" name="npcLabel" xy="180,15" size="57,19" fontSize="12" color="#bdc3c7" vAlign="middle" text="NPC数量:"/>
+    <text id="n3_npcValue" name="npcValue" xy="180,30" size="37,22" fontSize="14" color="#ffffff" vAlign="middle" text="30 个"/>
+    <graph id="n4_sep2" name="separator2" xy="300,10" size="1,40" type="rect" fillColor="#ff7f8c8d"/>
+    <text id="n5_callLabel" name="callLabel" xy="330,15" size="68,19" fontSize="12" color="#bdc3c7" vAlign="middle" text="总调用次数:"/>
+    <text id="n5_callValue" name="callValue" xy="330,30" size="57,22" fontSize="14" color="#ffffff" vAlign="middle" text="1,234 次"/>
+    <graph id="n6_sep3" name="separator3" xy="470,10" size="1,40" type="rect" fillColor="#ff7f8c8d"/>
+    <text id="n7_runtimeLabel" name="runtimeLabel" xy="500,15" size="56,19" fontSize="12" color="#bdc3c7" vAlign="middle" text="运行时长:"/>
+    <text id="n7_runtimeValue" name="runtimeValue" xy="500,30" size="73,22" fontSize="14" color="#ffffff" vAlign="middle" text="15天 6小时"/>
+    <graph id="n8_sep4" name="separator4" xy="640,10" size="1,40" type="rect" fillColor="#ff7f8c8d"/>
+    <text id="n9_statusLabel" name="statusLabel" xy="670,15" size="56,19" fontSize="12" color="#bdc3c7" vAlign="middle" text="运行状态:"/>
+    <graph id="n9_indicator" name="statusIndicator" xy="670,42" size="8,8" type="eclipse" fillColor="#ff27ae60">
+      <gearColor controller="runStatus" pages="1" values="#ff0000" default="#27ae60"/>
+    </graph>
+    <text id="n9_statusValue" name="statusValue" xy="685,37" size="52,19" fontSize="12" color="#27ae60" vAlign="middle" text="运行正常">
+      <gearColor controller="runStatus" pages="1" values="#ff0000,#000000" default="#27ae60,#000000"/>
+      <gearText controller="runStatus" pages="0,1" values="运行正常|运行异常"/>
+    </text>
+  </displayList>
+</component>

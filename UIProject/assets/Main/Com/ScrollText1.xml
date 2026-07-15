@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="500,300" overflow="scroll" scrollBarFlags="4">
+  <displayList>
+    <richtext id="n2_brox" name="content" xy="0,-1" size="500,46" fontSize="16" color="#ffffff" ubb="true" vars="true" autoSize="height" text="提示：move &lt;x&gt; &lt;y&gt;&#xA;移动到网格坐标">
+      <relation target="" sidePair="width-width"/>
+    </richtext>
+  </displayList>
+</component>

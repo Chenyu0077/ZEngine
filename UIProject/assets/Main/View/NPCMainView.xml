@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="900,730" pivot="0.5,0.5" anchor="true">
+  <controller name="tagCtrol" pages="0,basic,1,ability,2,emotion,3,prospect,4,assets,5,social,6,tags" selected="0">
+    <remark page="0" value="基本"/>
+    <remark page="1" value="能力"/>
+    <remark page="2" value="情绪"/>
+    <remark page="3" value="需求"/>
+    <remark page="4" value="资产"/>
+    <remark page="5" value="社交"/>
+    <remark page="6" value="标签"/>
+  </controller>
+  <controller name="popCtrol" pages="0,hide,1,show" selected="0"/>
+  <displayList>
+    <graph id="n0_o6bc" name="mask" xy="0,0" pivot="0.5,0.5" size="900,730" type="rect" fillColor="#6e000000"/>
+    <graph id="n1_o6bc" name="currentActionBg" xy="15,48" size="410,325" group="n21_o6bc" type="rect" lineColor="#ff999999" fillColor="#4c000000"/>
+    <text id="n2_o6bc" name="currentActionTitle" xy="25,58" size="116,30" group="n21_o6bc" fontSize="16" color="#cccccc" autoSize="none" bold="true" text="动作"/>
+    <component id="n45_jxy5" name="currentActionContent" src="hx1rj" fileName="Com/ScrollText.xml" xy="29,100" pivot="0.5,0.5" size="383,264" group="n21_o6bc"/>
+    <group id="n21_o6bc" name="n21" xy="15,48" size="410,325"/>
+    <graph id="n4_o6bc" name="npcPlanBg" xy="444,48" size="438,325" group="n22_o6bc" type="rect" lineColor="#ff999999" fillColor="#4c000000"/>
+    <text id="n5_o6bc" name="npcPlanTitle" xy="470,58" size="103,31" group="n22_o6bc" fontSize="16" color="#cccccc" autoSize="none" bold="true" text="NPC - 计划"/>
+    <component id="n35_hx1r" name="npcPlanContent" src="hx1rj" fileName="Com/ScrollText.xml" xy="464,95" pivot="0.5,0.5" size="408,261" group="n22_o6bc"/>
+    <group id="n22_o6bc" name="n22" xy="444,48" size="438,325"/>
+    <graph id="n7_o6bc" name="bodyBg" xy="21,388" size="198,326" group="n23_o6bc" type="rect" lineColor="#ff999999" fillColor="#4c000000"/>
+    <text id="n8_o6bc" name="bodyTitle" xy="31,398" size="56,30" group="n23_o6bc" fontSize="16" color="#cccccc" autoSize="none" bold="true" text="身体"/>
+    <text id="n9_o6bc" name="bodyContent" xy="31,438" size="178,263" group="n23_o6bc" fontSize="14" color="#cccccc" autoSize="none" text="加载中..."/>
+    <group id="n23_o6bc" name="n23" xy="21,388" size="198,326"/>
+    <graph id="n10_o6bc" name="attributeBg" xy="236,388" size="645,326" group="n24_o6bc" type="rect" lineColor="#ff999999" fillColor="#4c000000"/>
+    <text id="n11_o6bc" name="attributeTitle" xy="255,400" size="90,24" group="n24_o6bc" fontSize="16" color="#cccccc" bold="true" text="NPC - 属性"/>
+    <graph id="n13_o6bc" name="contentBg" xy="255,485" size="605,218" group="n24_o6bc" type="rect" lineColor="#ffdddddd" fillColor="#00ffffff"/>
+    <component id="n28_o6bc" name="basicBtn" src="o6bch" fileName="Com/TagBtn.xml" xy="264,445" pivot="0.5,0.5" size="58,23" group="n24_o6bc" aspect="true">
+      <Button title="基本" titleFontSize="14"/>
+    </component>
+    <component id="n29_o6bc" name="abilityBtn" src="o6bch" fileName="Com/TagBtn.xml" xy="339,445" pivot="0.5,0.5" size="58,23" group="n24_o6bc" aspect="true">
+      <Button title="能力" titleFontSize="14"/>
+    </component>
+    <component id="n30_o6bc" name="emotionBtn" src="o6bch" fileName="Com/TagBtn.xml" xy="414,445" pivot="0.5,0.5" size="58,23" group="n24_o6bc" aspect="true">
+      <Button title="情绪" titleFontSize="14"/>
+    </component>
+    <component id="n31_o6bc" name="prospectBtn" src="o6bch" fileName="Com/TagBtn.xml" xy="493,445" pivot="0.5,0.5" size="58,23" group="n24_o6bc" aspect="true">
+      <Button title="需求" titleFontSize="14"/>
+    </component>
+    <component id="n32_o6bc" name="assetsBtn" src="o6bch" fileName="Com/TagBtn.xml" xy="573,444" pivot="0.5,0.5" size="58,23" group="n24_o6bc" aspect="true">
+      <Button title="资产" titleFontSize="14"/>
+    </component>
+    <component id="n33_o6bc" name="socialBtn" src="o6bch" fileName="Com/TagBtn.xml" xy="649,444" pivot="0.5,0.5" size="58,23" group="n24_o6bc" aspect="true">
+      <Button title="社交" titleFontSize="14"/>
+    </component>
+    <component id="n34_o6bc" name="tagsBtn" src="o6bch" fileName="Com/TagBtn.xml" xy="724,444" pivot="0.5,0.5" size="58,23" group="n24_o6bc" aspect="true">
+      <Button title="标签" titleFontSize="14"/>
+    </component>
+    <component id="n36_hx1r" name="basicContent" src="hx1rj" fileName="Com/ScrollText.xml" xy="265,495" size="586,202" group="n24_o6bc">
+      <gearDisplay controller="tagCtrol" pages="0"/>
+    </component>
+    <component id="n38_hx1r" name="abilityContent" src="hx1rj" fileName="Com/ScrollText.xml" xy="265,495" size="586,202" group="n24_o6bc">
+      <gearDisplay controller="tagCtrol" pages="1"/>
+    </component>
+    <component id="n39_hx1r" name="emotionContent" src="hx1rj" fileName="Com/ScrollText.xml" xy="265,495" size="586,202" group="n24_o6bc">
+      <gearDisplay controller="tagCtrol" pages="2"/>
+    </component>
+    <component id="n40_hx1r" name="prospectContent" src="hx1rj" fileName="Com/ScrollText.xml" xy="265,495" size="586,202" group="n24_o6bc">
+      <gearDisplay controller="tagCtrol" pages="3"/>
+    </component>
+    <component id="n41_hx1r" name="assetsContent" src="hx1rj" fileName="Com/ScrollText.xml" xy="265,495" size="586,202" group="n24_o6bc">
+      <gearDisplay controller="tagCtrol" pages="4"/>
+    </component>
+    <component id="n42_hx1r" name="socialContent" src="hx1rj" fileName="Com/ScrollText.xml" xy="265,495" size="586,202" group="n24_o6bc">
+      <gearDisplay controller="tagCtrol" pages="5"/>
+    </component>
+    <component id="n43_hx1r" name="tagsContent" src="hx1rj" fileName="Com/ScrollText.xml" xy="265,495" size="586,202" group="n24_o6bc">
+      <gearDisplay controller="tagCtrol" pages="6"/>
+    </component>
+    <group id="n24_o6bc" name="n24" xy="236,388" size="645,326"/>
+    <loader id="n53_gri9" name="btnPop" xy="-26,361" pivot="0.5,0.5" size="31,35" aspect="true" url="ui://f70pfjtkgri91e" fill="scale" shrinkOnly="true"/>
+    <component id="n49_kgdi" name="NPCCombox" src="kgdi1r" fileName="Com/NPCCombox.xml" xy="15,12" pivot="0.5,0.5">
+      <ComboBox visibleItemCount="10"/>
+    </component>
+    <text id="n51_kgdi" name="followTitle" xy="148,13" pivot="0.5,0.5" size="70,24" fontSize="16" color="#ffffff" vAlign="middle" autoSize="none" text="是否跟随"/>
+    <component id="n52_gri9" name="btnFollow" src="gri91b" fileName="Com/CheckedBtn.xml" pkg="f70pfjtk" xy="233,12" pivot="0.5,0.5" size="25,25"/>
+  </displayList>
+</component>

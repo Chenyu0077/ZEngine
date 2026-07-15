@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e27d428b421ad149babd6e0a2ee9c44, type: 3}
+  m_Name: MapEditorConfig-copy
+  m_EditorClassIdentifier: 
+  layers:
+  - id: layer_4
+    displayName: "\u6C34\u5E95\u9646\u5730"
+    sortOrder: 0
+    debugColor: {r: 0.19523403, g: 0.66561645, b: 0.15750991, a: 1}
+    defaultVisible: 1
+    defaultLocked: 0
+    defaultOpacity: 1
+  - id: layer_5
+    displayName: "\u6C34\u9762"
+    sortOrder: 10
+    debugColor: {r: 0.30287832, g: 0.47570908, b: 0.7592066, a: 1}
+    defaultVisible: 1
+    defaultLocked: 0
+    defaultOpacity: 1
+  - id: ground
+    displayName: "\u5730\u9762"
+    sortOrder: 20
+    debugColor: {r: 0.4, g: 0.75, b: 0.4, a: 0.5}
+    defaultVisible: 1
+    defaultLocked: 0
+    defaultOpacity: 1
+  - id: decoration
+    displayName: "\u571F\u5730"
+    sortOrder: 30
+    debugColor: {r: 0.4, g: 0.4, b: 0.8, a: 0.5}
+    defaultVisible: 1
+    defaultLocked: 0
+    defaultOpacity: 1
+  - id: overlay
+    displayName: "\u88C5\u9970"
+    sortOrder: 40
+    debugColor: {r: 0.8, g: 0.75, b: 0.4, a: 0.5}
+    defaultVisible: 1
+    defaultLocked: 0
+    defaultOpacity: 1
+  cellPropertySchema:
+  - key: walkable
+    displayName: "\u53EF\u884C\u8D70"
+    valueType: 0
+    defaultValue: true
+    enumOptionsRef: 
+    enableOverlay: 1
+    overlayTrueValue: false
+    overlayColor: {r: 1, g: 0.2, b: 0.2, a: 0.45}
+    enumOverlayColors: []
+  - key: buildable
+    displayName: "\u53EF\u5EFA\u9020"
+    valueType: 0
+    defaultValue: true
+    enumOptionsRef: 
+    enableOverlay: 1
+    overlayTrueValue: false
+    overlayColor: {r: 1, g: 0.6, b: 0.1, a: 0.45}
+    enumOverlayColors: []
+  - key: farmable
+    displayName: "\u53EF\u8015\u79CD"
+    valueType: 0
+    defaultValue: false
+    enumOptionsRef: 
+    enableOverlay: 1
+    overlayTrueValue: true
+    overlayColor: {r: 0.2, g: 0.85, b: 0.2, a: 0.45}
+    enumOverlayColors: []
+  - key: terrainType
+    displayName: "\u5730\u5F62\u7C7B\u578B"
+    valueType: 4
+    defaultValue: grass
+    enumOptionsRef: terrainTypes
+    enableOverlay: 0
+    overlayTrueValue: true
+    overlayColor: {r: 1, g: 0.2, b: 0.2, a: 0.45}
+    enumOverlayColors: []
+  - key: zone
+    displayName: "\u533A\u57DF"
+    valueType: 4
+    defaultValue: none
+    enumOptionsRef: zoneTypes
+    enableOverlay: 1
+    overlayTrueValue: true
+    overlayColor: {r: 1, g: 0.2, b: 0.2, a: 0.45}
+    enumOverlayColors:
+    - enumId: residential
+      color: {r: 0.2, g: 0.6, b: 1, a: 0.3}
+    - enumId: commercial
+      color: {r: 1, g: 0.85, b: 0.2, a: 0.3}
+    - enumId: farm
+      color: {r: 0.4, g: 0.9, b: 0.3, a: 0.3}
+    - enumId: nature
+      color: {r: 0.3, g: 0.8, b: 0.5, a: 0.3}
+  - key: pathWeight
+    displayName: "\u5BFB\u8DEF\u6743\u91CD"
+    valueType: 2
+    defaultValue: 1.0
+    enumOptionsRef: 
+    enableOverlay: 0
+    overlayTrueValue: true
+    overlayColor: {r: 1, g: 0.2, b: 0.2, a: 0.45}
+    enumOverlayColors: []
+  - key: prop_6
+    displayName: "\u65B0\u5C5E\u6027"
+    valueType: 4
+    defaultValue: 0
+    enumOptionsRef: PropType
+    enableOverlay: 0
+    overlayTrueValue: true
+    overlayColor: {r: 1, g: 0.2, b: 0.2, a: 0.45}
+    enumOverlayColors: []
+  - key: prop_7
+    displayName: "\u65B0\u5C5E\u6027"
+    valueType: 0
+    defaultValue: false
+    enumOptionsRef: 
+    enableOverlay: 0
+    overlayTrueValue: true
+    overlayColor: {r: 1, g: 0.2, b: 0.2, a: 0.45}
+    enumOverlayColors: []
+  terrainTypes:
+  - id: grass
+    displayName: "\u8349\u5730"
+    mapColor: {r: 0.3, g: 0.7, b: 0.3, a: 1}
+    defaultPathWeight: 1
+  - id: water
+    displayName: "\u6C34\u57DF"
+    mapColor: {r: 0.2, g: 0.4, b: 0.9, a: 1}
+    defaultPathWeight: 99
+  - id: road
+    displayName: "\u9053\u8DEF"
+    mapColor: {r: 0.7, g: 0.6, b: 0.4, a: 1}
+    defaultPathWeight: 0.5
+  - id: sand
+    displayName: "\u6C99\u5730"
+    mapColor: {r: 0.9, g: 0.8, b: 0.5, a: 1}
+    defaultPathWeight: 1.5
+  - id: forest
+    displayName: "\u68EE\u6797"
+    mapColor: {r: 0.1, g: 0.5, b: 0.1, a: 1}
+    defaultPathWeight: 1.8
+  zoneTypes:
+  - id: none
+    displayName: "\u65E0\u533A\u57DF"
+    debugColor: {r: 0, g: 0, b: 0, a: 0}
+  - id: residential
+    displayName: "\u4F4F\u5B85\u533A"
+    debugColor: {r: 0.8, g: 0.8, b: 0.2, a: 0.2}
+  - id: commercial
+    displayName: "\u5546\u4E1A\u533A"
+    debugColor: {r: 0.2, g: 0.8, b: 0.8, a: 0.2}
+  - id: nature
+    displayName: "\u81EA\u7136\u533A"
+    debugColor: {r: 0.2, g: 0.8, b: 0.2, a: 0.2}
+  - id: farm
+    displayName: "\u519C\u7530\u533A"
+    debugColor: {r: 0.8, g: 0.6, b: 0.2, a: 0.2}
+  spawnPointTypes:
+  - id: npc
+    displayName: NPC
+    gizmoColor: {r: 0, g: 0, b: 1, a: 1}
+  - id: player
+    displayName: "\u73A9\u5BB6"
+    gizmoColor: {r: 0, g: 1, b: 0, a: 1}
+  - id: item
+    displayName: "\u7269\u54C1"
+    gizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  tileSets:
+  - id: ts_0
+    displayName: "\u65B0 TileSet"
+    tileSet: {fileID: 11400000, guid: 1cc0223d9b6a6e242ae090ac07d0c34b, type: 2}
+  objectPalettePath: Assets/Resources/Prefabs/MapObjects/
+  defaultWidth: 200
+  defaultHeight: 120
+  defaultCellSize: 1
+  exportPath: Assets/Resources/Maps
+  gridLineColor: {r: 1, g: 1, b: 1, a: 0.2}
+  gridLineWidth: 1
+  showCellCoords: 1

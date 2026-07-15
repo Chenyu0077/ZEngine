@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080" pivot="0.5,0.5" anchor="true" opaque="false">
+  <displayList>
+    <graph id="n0_wg5s" name="mask" xy="959,540" pivot="0.5,0.5" anchor="true" size="1920,1080" touchable="false" type="rect" fillColor="#00ffffff"/>
+    <component id="n3_jxy5" name="TimePanel" src="k2bkv" fileName="Com/TimeCom.xml" xy="1342,42" pivot="0.5,0.5">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n6_gri9" name="btnHistory" src="cl9k1t" fileName="Com/BtnCost.xml" xy="1604,42" pivot="0.5,0.5"/>
+    <component id="n5_cl9k" name="btnCost" src="cl9k1t" fileName="Com/BtnCost.xml" xy="1711,42" pivot="0.5,0.5"/>
+    <component id="n4_cl9k" name="btnConfig" src="cl9k1s" fileName="Com/BtnConfig.xml" xy="1815,42" pivot="0.5,0.5"/>
+  </displayList>
+</component>

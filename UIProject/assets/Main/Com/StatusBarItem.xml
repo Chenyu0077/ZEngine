@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="320,30" opaque="false">
+  <controller name="warn" pages="0,hide,1,show" selected="0"/>
+  <displayList>
+    <text id="n0_sbi" name="icon" xy="6,1" size="20,20" fontSize="12" align="center" vAlign="middle" autoSize="none" text=""/>
+    <text id="n1_sbi" name="label" xy="26,1" size="38,20" fontSize="12" color="#333333" align="center" vAlign="middle" autoSize="none" bold="true" text="体力">
+      <relation target="n0_sbi" sidePair="left-right"/>
+    </text>
+    <text id="n2_sbi" name="value" xy="65,1" size="38,20" fontSize="12" color="#333333" align="center" vAlign="middle" autoSize="none" bold="true" text="100">
+      <relation target="n1_sbi" sidePair="left-right"/>
+    </text>
+    <text id="n3_sbi" name="warnIcon" xy="105,1" size="20,20" fontSize="12" align="center" vAlign="middle" autoSize="none" text="⚠">
+      <gearDisplay controller="warn" pages="1"/>
+      <relation target="n2_sbi" sidePair="left-right"/>
+    </text>
+    <graph id="n4_sbi" name="barBg" xy="0,23" size="320,6" touchable="false" type="rect" fillColor="#ffe0e0e0" corner="3">
+      <relation target="" sidePair="width-width"/>
+    </graph>
+    <graph id="n5_sbi" name="barFill" xy="0,23" size="320,6" touchable="false" type="rect" fillColor="#ffee3333" corner="3">
+      <relation target="" sidePair="width-width"/>
+    </graph>
+  </displayList>
+</component>

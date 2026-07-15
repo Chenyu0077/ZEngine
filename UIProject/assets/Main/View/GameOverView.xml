@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <graph id="n7_gri9" name="back" xy="0,0" pivot="0.5,0.5" size="1920,1080" type="rect" fillColor="#99000000"/>
+    <graph id="n0_jxy5" name="overBack" xy="949,498" pivot="0.5,0.5" anchor="true" size="942,568" type="rect" fillColor="#ff333333"/>
+    <text id="n2_jxy5" name="title" xy="799,241" pivot="0.5,0.5" size="292,49" fontSize="33" color="#ff0000" align="center" vAlign="middle" autoSize="none" text="游戏结束">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <component id="n8_gri9" name="scrollContent" src="cmeio" fileName="Com/ScrollText1.xml" xy="535,307" pivot="0.5,0.5" size="836,384"/>
+    <component id="n4_jxy5" name="ExitBtn" src="ixn42" fileName="Com/CommonBtn1.xml" pkg="f70pfjtk" xy="869,716" pivot="0.5,0.5" size="160,38">
+      <Button title="退出游戏"/>
+    </component>
+  </displayList>
+</component>

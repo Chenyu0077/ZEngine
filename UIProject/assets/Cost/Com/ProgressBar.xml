@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,16" extention="ProgressBar">
+  <displayList>
+    <!-- 背景轨道 -->
+    <graph id="n0" name="bg" xy="0,0" size="100,16"
+           type="rect" fillColor="#7f2c3e50" corner="8"/>
+
+    <!-- 进度填充 -->
+    <graph id="n1" name="bar" xy="2,2" size="96,12"
+           type="rect" fillColor="#ff27ae60" corner="6"/>
+
+    <!-- 可选：进度文本 -->
+    <text id="n2" name="title" xy="0,0" size="100,16"
+          fontSize="10" color="#ffffff" align="center" vAlign="middle"
+          text=""/>
+  </displayList>
+
+  <ProgressBar titleType="percent"/>
+</component>

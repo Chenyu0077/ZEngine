@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <graph id="n4_wg5s" name="mask" xy="0,1" pivot="0.5,0.5" size="1920,1080" type="rect" fillColor="#c22d2d2d"/>
+    <graph id="n5_wg5s" name="back" xy="691,39" pivot="0.5,0.5" size="500,996" type="rect" lineSize="0" fillColor="#ff333333">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <richtext id="n8_wg5s" name="title1" xy="725,57" pivot="0.5,0.5" size="226,55" group="n11_wg5s" fontSize="24" color="#ffffff" vAlign="middle" autoSize="none" bold="true" text="日常 &amp; 构建模型"/>
+    <text id="n9_wg5s" name="tip1" xy="725,105" pivot="0.5,0.5" size="414,53" group="n11_wg5s" fontSize="18" color="#cccccc" vAlign="middle" autoSize="none" text="NPC构建、日程规划、动作执行、对话等"/>
+    <component id="n6_wg5s" name="commonModel" src="wg5ss" fileName="Com/ComboBox1.xml" xy="725,161" pivot="0.5,0.5" size="435,56" group="n11_wg5s">
+      <ComboBox title="gpt-4o-mini" visibleItemCount="10" direction="down" autoClearItems="true">
+        <item title="gpt-4o-mini"/>
+        <item title="qwen-3.6-plus"/>
+        <item title="gemini-3-pro-preview"/>
+        <item title="gpt-5.1"/>
+        <item title="claude-opus-4.6"/>
+      </ComboBox>
+    </component>
+    <group id="n11_wg5s" name="n11" xy="725,57" size="435,160"/>
+    <richtext id="n12_wg5s" name="title2" xy="725,241" pivot="0.5,0.5" size="226,55" group="n15_wg5s" fontSize="24" color="#ffffff" vAlign="middle" autoSize="none" bold="true" text="反思模型"/>
+    <text id="n13_wg5s" name="tip2" xy="725,290" pivot="0.5,0.5" size="460,53" group="n15_wg5s" fontSize="18" color="#cccccc" vAlign="middle" autoSize="none" text="每日回顾、灵魂更新、策略更新、策略调整、死亡传记等"/>
+    <component id="n14_wg5s" name="reflectModel" src="wg5ss" fileName="Com/ComboBox1.xml" xy="725,347" pivot="0.5,0.5" size="435,56" group="n15_wg5s">
+      <ComboBox title="gpt-4o-mini" visibleItemCount="10" direction="down" autoClearItems="true">
+        <item title="gpt-4o-mini"/>
+        <item title="qwen-3.6-plus"/>
+        <item title="gemini-3-pro-preview"/>
+        <item title="gpt-5.1"/>
+        <item title="claude-opus-4.6"/>
+      </ComboBox>
+    </component>
+    <group id="n15_wg5s" name="n15" xy="725,241" size="460,162"/>
+    <richtext id="n16_wg5s" name="title3" xy="725,430" pivot="0.5,0.5" size="226,55" group="n19_wg5s" fontSize="24" color="#ffffff" vAlign="middle" autoSize="none" bold="true" text="生成模式"/>
+    <text id="n17_wg5s" name="tip3" xy="725,478" pivot="0.5,0.5" size="460,53" group="n19_wg5s" fontSize="18" color="#cccccc" vAlign="middle" autoSize="none" text="使用代码预置的固定家庭数据，速度快，无需API"/>
+    <text id="n44_jxy5" name="n44" xy="726,542" pivot="0.5,0.5" size="152,33" group="n19_wg5s" fontSize="18" color="#ffffff" vAlign="middle" autoSize="none" text="LLM生成NPC模型"/>
+    <component id="n43_jxy5" name="registerNPCsModel" src="wg5ss" fileName="Com/ComboBox1.xml" xy="891,541" pivot="0.5,0.5" size="269,34" group="n19_wg5s">
+      <ComboBox title="gpt-4o-mini" visibleItemCount="10" direction="down" autoClearItems="true">
+        <item title="gpt-4o-mini"/>
+        <item title="qwen-3.6-plus"/>
+        <item title="gemini-3-pro-preview"/>
+        <item title="gpt-5.1"/>
+        <item title="claude-opus-4.6"/>
+      </ComboBox>
+    </component>
+    <component id="n47_jxy5" name="presetMode" src="wg5ss" fileName="Com/ComboBox1.xml" xy="726,591" pivot="0,0.5" size="434,34" group="n19_wg5s">
+      <ComboBox title="gpt-4o-mini" visibleItemCount="10" direction="down" autoClearItems="true">
+        <item title="gpt-4o-mini"/>
+        <item title="qwen-3.6-plus"/>
+        <item title="gemini-3-pro-preview"/>
+        <item title="gpt-5.1"/>
+        <item title="claude-opus-4.6"/>
+      </ComboBox>
+    </component>
+    <component id="n45_jxy5" name="btnMenual" src="jxy515" fileName="Com/CheckBtn.xml" xy="725,642" pivot="0.5,0.5" size="178,42" group="n19_wg5s">
+      <Button title="预置数据" titleFontSize="18"/>
+    </component>
+    <component id="n46_jxy5" name="btnLLM" src="jxy515" fileName="Com/CheckBtn.xml" xy="982,642" pivot="0.5,0.5" size="178,42" group="n19_wg5s">
+      <Button title="LLM生成" titleFontSize="18"/>
+    </component>
+    <group id="n19_wg5s" name="n19" xy="725,430" size="460,254"/>
+    <richtext id="n22_wg5s" name="title4" xy="725,716" pivot="0.5,0.5" size="410,55" group="n26_wg5s" fontSize="24" color="#ffffff" vAlign="middle" autoSize="none" bold="true" text="村志"/>
+    <component id="n24_wg5s" name="btnVillageLog" src="k4vsa" fileName="Com/ComBtn.xml" xy="750,771" pivot="0.5,0.5" size="362,42" group="n26_wg5s">
+      <Button title="查看村志" titleFontSize="18"/>
+    </component>
+    <group id="n26_wg5s" name="n26" xy="725,716" size="410,97"/>
+    <richtext id="n34_jxy5" name="title5" xy="726,849" pivot="0.5,0.5" size="410,55" group="n33_jxy5" fontSize="24" color="#ffffff" vAlign="middle" autoSize="none" bold="true" text="自定义BaseUrl和Key"/>
+    <graph id="n38_jxy5" name="n38" xy="726,915" pivot="0.5,0.5" size="336,41" group="n33_jxy5" type="rect" lineSize="0" fillColor="#ff999999"/>
+    <graph id="n36_jxy5" name="n36" xy="726,966" pivot="0.5,0.5" size="336,41" group="n33_jxy5" type="rect" lineSize="0" fillColor="#ff999999"/>
+    <text id="n37_jxy5" name="baseUrlInput" xy="726,915" pivot="0.5,0.5" size="336,41" group="n33_jxy5" fontSize="16" vAlign="middle" autoSize="none" text="https://api.deepseek.com" input="true"/>
+    <text id="n30_jxy5" name="keyInput" xy="726,965" pivot="0.5,0.5" size="336,41" group="n33_jxy5" fontSize="16" vAlign="middle" autoSize="none" text="sk-xxxxxxxxxxx" input="true"/>
+    <component id="n35_jxy5" name="btnKeySend" src="k4vsa" fileName="Com/ComBtn.xml" xy="1082,964" pivot="0.5,0.5" size="58,42" group="n33_jxy5">
+      <Button title="确认" titleFontSize="18"/>
+    </component>
+    <group id="n33_jxy5" name="n33" xy="726,849" size="414,158"/>
+    <component id="n0_wg5s" name="BtnClose" src="ixn44" fileName="Com/CloseBtn1.xml" pkg="f70pfjtk" xy="1132,63" pivot="0.5,0.5" size="36,36">
+      <relation target="" sidePair="right-right,top-top"/>
+      <Button title="X"/>
+    </component>
+    <graph id="n39_9jsz" name="line" xy="715,231" pivot="0.5,0.5" size="451,2" type="rect" lineSize="0"/>
+    <graph id="n40_9jsz" name="line1" xy="715,421" pivot="0.5,0.5" size="451,2" type="rect" lineSize="0"/>
+    <graph id="n41_9jsz" name="line2" xy="715,707" pivot="0.5,0.5" size="451,2" type="rect" lineSize="0"/>
+    <graph id="n42_9jsz" name="line3" xy="715,836" pivot="0.5,0.5" size="451,2" type="rect" lineSize="0"/>
+  </displayList>
+</component>

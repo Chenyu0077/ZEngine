@@ -1,0 +1,1842 @@
+{
+  "mapId": "td_level01",
+  "mapName": "塔防-第一关",
+  "width": 20,
+  "height": 30,
+  "cellSize": 1.0,
+  "schemaVersion": "1.0",
+  "configPath": "Assets/Settings/MapEditor/MapEditorConfig.asset",
+  "objectResourcePath": "Prefabs/MapObjects",
+  "schema": {
+    "cellProperties": [
+      {
+        "key": "walkable",
+        "type": "Bool",
+        "defaultValue": "false"
+      },
+      {
+        "key": "buildable",
+        "type": "Bool",
+        "defaultValue": "false"
+      },
+      {
+        "key": "terrainType",
+        "type": "Enum",
+        "defaultValue": "grass"
+      },
+      {
+        "key": "zone",
+        "type": "Enum",
+        "defaultValue": "none"
+      },
+      {
+        "key": "pathWeight",
+        "type": "Float",
+        "defaultValue": "1.0"
+      },
+      {
+        "key": "locked",
+        "type": "Bool",
+        "defaultValue": "false"
+      }
+    ],
+    "objectProperties": [],
+    "terrainTypes": [
+      "grass",
+      "road",
+      "water"
+    ],
+    "zoneTypes": [
+      "none",
+      "path",
+      "tower",
+      "base"
+    ],
+    "layers": [
+      {
+        "id": "ground",
+        "sortOrder": 0
+      }
+    ]
+  },
+  "layers": [
+    {
+      "id": "ground",
+      "tiles": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "cells": [
+    {
+      "x": 10,
+      "y": 29,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 28,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 27,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 26,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 25,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 24,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 23,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 22,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 11,
+      "y": 22,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 12,
+      "y": 22,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 13,
+      "y": 22,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 14,
+      "y": 22,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 15,
+      "y": 22,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 15,
+      "y": 21,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 15,
+      "y": 20,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 15,
+      "y": 19,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 15,
+      "y": 18,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 15,
+      "y": 17,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 15,
+      "y": 16,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 15,
+      "y": 15,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 14,
+      "y": 15,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 13,
+      "y": 15,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 12,
+      "y": 15,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 11,
+      "y": 15,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 15,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 9,
+      "y": 15,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 8,
+      "y": 15,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 7,
+      "y": 15,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 6,
+      "y": 15,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 5,
+      "y": 15,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 5,
+      "y": 14,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 5,
+      "y": 13,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 5,
+      "y": 12,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "path"
+      }
+    },
+    {
+      "x": 10,
+      "y": 0,
+      "props": {
+        "walkable": "true",
+        "terrainType": "road",
+        "zone": "base"
+      }
+    },
+    {
+      "x": 11,
+      "y": 27,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 9,
+      "y": 27,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 11,
+      "y": 26,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 9,
+      "y": 26,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 11,
+      "y": 25,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 9,
+      "y": 25,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 11,
+      "y": 24,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 9,
+      "y": 24,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 11,
+      "y": 23,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 9,
+      "y": 23,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 9,
+      "y": 22,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 10,
+      "y": 21,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 11,
+      "y": 21,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 12,
+      "y": 23,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 12,
+      "y": 21,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 13,
+      "y": 23,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 13,
+      "y": 21,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 14,
+      "y": 23,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 14,
+      "y": 21,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 16,
+      "y": 22,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 15,
+      "y": 23,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 16,
+      "y": 21,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 16,
+      "y": 20,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 14,
+      "y": 20,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 16,
+      "y": 19,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 14,
+      "y": 19,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 16,
+      "y": 18,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 14,
+      "y": 18,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 16,
+      "y": 17,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 14,
+      "y": 17,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 14,
+      "y": 16,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 16,
+      "y": 15,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 15,
+      "y": 14,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 14,
+      "y": 14,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 13,
+      "y": 16,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 13,
+      "y": 14,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 12,
+      "y": 16,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 12,
+      "y": 14,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 11,
+      "y": 16,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 11,
+      "y": 14,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 10,
+      "y": 16,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 10,
+      "y": 14,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 9,
+      "y": 16,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 9,
+      "y": 14,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 8,
+      "y": 16,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 8,
+      "y": 14,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 7,
+      "y": 16,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 7,
+      "y": 14,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 6,
+      "y": 16,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 6,
+      "y": 14,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 4,
+      "y": 15,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 5,
+      "y": 16,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 4,
+      "y": 14,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 6,
+      "y": 13,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 4,
+      "y": 13,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 6,
+      "y": 12,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 4,
+      "y": 12,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 6,
+      "y": 11,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 6,
+      "y": 10,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 11,
+      "y": 8,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 11,
+      "y": 7,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 11,
+      "y": 6,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 11,
+      "y": 5,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "props": {
+        "buildable": "true",
+        "zone": "tower",
+        "locked": "true"
+      }
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "props": {
+        "buildable": "true",
+        "zone": "tower"
+      }
+    }
+  ],
+  "objects": [],
+  "spawnPoints": [
+    {
+      "id": "spawn_enemy_0",
+      "x": 10,
+      "y": 29,
+      "type": "enemy",
+      "npcId": "",
+      "facing": "down"
+    }
+  ]
+}

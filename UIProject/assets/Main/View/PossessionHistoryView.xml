@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <graph id="n17_gri9" name="back" xy="0,0" pivot="0.5,0.5" size="1920,1080" type="rect" fillColor="#80999999"/>
+    <graph id="n0_phs1" name="rectback" xy="661,177" size="560,720" type="rect" lineSize="0" fillColor="#e6000000" corner="14"/>
+    <graph id="n1_phs1" name="titleBar" xy="661,177" size="560,56" type="rect" lineSize="0" fillColor="#cc111111" corner="14"/>
+    <graph id="n2_phs1" name="titleBarBottom" xy="661,219" size="560,14" type="rect" lineSize="0" fillColor="#cc111111"/>
+    <text id="n3_phs1" name="title" xy="681,177" size="300,56" fontSize="20" color="#ffdd88" vAlign="middle" autoSize="none" bold="true" text="夺舍行动历史"/>
+    <text id="n4_phs1" name="charName" xy="921,177" size="200,56" fontSize="14" color="#aaaaaa" align="right" vAlign="middle" autoSize="none" text="村长"/>
+    <component id="n5_phs1" name="btnClose" src="ixn44" fileName="Com/CloseBtn1.xml" pkg="f70pfjtk" xy="1171,187" pivot="0.5,0.5" size="36,36">
+      <Button title="✕"/>
+    </component>
+    <graph id="n6_phs1" name="dayBarBg" xy="661,233" size="560,40" type="rect" lineSize="0" fillColor="#aa111111"/>
+    <list id="n7_phs1" name="dayList" xy="669,237" size="544,32" layout="row" overflow="scroll" scroll="horizontal" colGap="6" defaultItem="ui://q0la9fq0phs004" autoClearItems="true">
+      <item title="第1天"/>
+      <item title="第2天"/>
+      <item title="第3天"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n8_phs1" name="timelineList" xy="671,281" size="540,382" overflow="scroll" lineGap="2" defaultItem="ui://q0la9fq0phs002" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <graph id="n9_phs1" name="dividerH" xy="671,667" size="540,1" type="rect" lineSize="0" fillColor="#33ffffff"/>
+    <graph id="n10_phs1" name="detailBg" xy="671,671" size="540,216" type="rect" lineSize="0" fillColor="#cc0a1a2a" corner="8"/>
+    <text id="n11_phs1" name="detailTitle" xy="681,673" size="380,28" fontSize="15" color="#ffdd88" vAlign="middle" autoSize="none" bold="true" autoClearText="true" text="与 周存仁 的对话"/>
+    <text id="n12_phs1" name="keyOutcomes" xy="681,701" size="520,22" fontSize="12" color="#88ff88" vAlign="middle" autoSize="none" autoClearText="true" text="周存仁借出粮食×2；双方关系略增"/>
+    <text id="n13_phs1" name="summaryInitiator" xy="681,725" size="520,28" fontSize="13" color="#ccdeff" vAlign="middle" autoSize="none" autoClearText="true" text="我开口向周存仁借了两斤米，他答应了"/>
+    <list id="n14_phs1" name="transcriptList" xy="671,755" size="540,128" overflow="scroll" lineGap="2" defaultItem="ui://q0la9fq0phs003" autoClearItems="true">
+      <item/>
+    </list>
+    <text id="n15_phs1" name="emptyHint" xy="671,671" size="540,216" fontSize="16" color="#555555" align="center" vAlign="middle" autoSize="none" text="点击带[对话]标签的记录查看详情"/>
+    <text id="n16_phs1" name="loadingHint" xy="671,281" size="540,382" fontSize="16" color="#444444" align="center" vAlign="middle" autoSize="none" text="加载中…"/>
+  </displayList>
+</component>

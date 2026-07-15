@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,22">
+  <displayList>
+    <graph id="n1_gri9" name="back" xy="0,0" pivot="0.5,0.5" size="400,22" type="rect" lineSize="0" fillColor="#ffcccccc">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n0_gri9" name="content" xy="0,0" size="400,22" fontSize="14" color="#444444" vAlign="middle" autoSize="none" text="· 铜钱 × 15  [ItemCategory.CURRENCY]">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+</component>

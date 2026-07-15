@@ -1,0 +1,272 @@
+//------------------------------
+// ZEngine
+// 作者: Chenyu
+//------------------------------
+
+using System.Collections.Generic;
+using System;
+using ZEngine.Core;
+
+namespace ZEngine.AI.FSM
+{
+    /// <summary>
+	/// 有限状态机
+	/// </summary>
+	public class FiniteStateMachine
+    {
+        private readonly List<IFsmNode> _nodes = new List<IFsmNode>();
+        private IFsmNode _curNode;
+        private IFsmNode _preNode;
+
+        // 并行节点：与主节点同时运行，不参与状态转换
+        private readonly List<IFsmNode> _parallelNodes = new List<IFsmNode>();
+
+        /// <summary>
+        /// 节点转换关系图
+        /// 注意：如果为NULL则不检测转换关系
+        /// </summary>
+        public FsmGraph Graph;
+
+        /// <summary>
+        /// 当前运行的节点名称
+        /// </summary>
+        public string CurrentNodeName
+        {
+            get { return _curNode != null ? _curNode.Name : string.Empty; }
+        }
+
+        /// <summary>
+        /// 之前运行的节点名称
+        /// </summary>
+        public string PreviousNodeName
+        {
+            get { return _preNode != null ? _preNode.Name : string.Empty; }
+        }
+
+
+        /// <summary>
+        /// 启动状态机
+        /// </summary>
+        /// <param name="entryNode">入口节点</param>
+        public void Run(string entryNode)
+        {
+            _curNode = GetNode(entryNode);
+            _preNode = GetNode(entryNode);
+
+            if (_curNode != null)
+            {
+                _curNode.OnEnter();
+
+                //递归执行子FSM
+                string initName = (_curNode as FsmCompositeNode)?.InitName;
+                if (!string.IsNullOrEmpty(initName))
+                    _curNode.SubFsm?.Run(initName);
+                else
+                    _curNode.SubFsm?.RunFirst();    
+            }
+            else
+                ZEngineLog.Error($"Not found entry node : {entryNode}");
+        }
+
+        public void RunFirst()
+        {
+            if (_nodes.Count > 0)
+                Run(_nodes[0].Name);
+            else
+                ZEngineLog.Warning("FSM has no nodes to run.");
+        }
+
+        /// <summary>
+        /// 显示帧更新
+        /// </summary>
+        public void Update()
+        {
+            if (_curNode != null)
+            {
+                _curNode.OnUpdate();
+                _curNode.SubFsm?.Update();
+            }
+            for (int i = 0; i < _parallelNodes.Count; i++)
+                _parallelNodes[i].OnUpdate();
+        }
+
+        /// <summary>
+        /// 物理帧更新
+        /// </summary>
+        public void FixedUpdate()
+        {
+            if (_curNode != null)
+            {
+                _curNode.OnFixedUpdate();
+                _curNode.SubFsm?.FixedUpdate();
+            }
+            for (int i = 0; i < _parallelNodes.Count; i++)
+                _parallelNodes[i].OnFixedUpdate();
+        }
+
+        /// <summary>
+        /// 加入一个节点
+        /// </summary>
+        public void AddNode(IFsmNode node)
+        {
+            if (node == null)
+                throw new ArgumentNullException();
+
+            if (_nodes.Contains(node) == false)
+            {
+                _nodes.Add(node);
+            }
+            else
+            {
+                ZEngineLog.Warning($"Node {node.Name} already existed");
+            }
+        }
+
+        /// <summary>
+        /// 转换节点
+        /// </summary>
+        public void Transition(string nodeName)
+        {
+            if (string.IsNullOrEmpty(nodeName))
+                throw new ArgumentNullException();
+
+            IFsmNode node = GetNode(nodeName);
+            if (node == null)
+            {
+                ZEngineLog.Error($"Can not found node {nodeName}");
+                return;
+            }
+
+            // 检测转换关系
+            if (Graph != null)
+            {
+                if (Graph.CanTransition(_curNode.Name, node.Name) == false)
+                {
+                    ZEngineLog.Error($"Can not transition {_curNode} to {node}");
+                    return;
+                }
+            }
+
+            //ZEngineLog.Log($"FSM transition {_curNode.Name} to {node.Name}");
+            _preNode = _curNode;
+            _curNode.OnExit();
+            _curNode = node;
+            _curNode.OnEnter();
+            _curNode.SubFsm?.RunFirst();    //递归执行子FSM
+        }
+
+        /// <summary>
+        /// 返回到之前的节点
+        /// </summary>
+        public void RevertToPreviousNode()
+        {
+            Transition(PreviousNodeName);
+        }
+
+        /// <summary>
+        /// 接收消息
+        /// </summary>
+        public void HandleMessage(object msg)
+        {
+            if (_curNode != null)
+            {
+                _curNode.OnHandleMessage(msg);
+                _curNode.SubFsm?.HandleMessage(msg);
+            }
+            for (int i = 0; i < _parallelNodes.Count; i++)
+                _parallelNodes[i].OnHandleMessage(msg);
+        }
+
+        /// <summary>
+        /// 停止当前状态机（同时退出所有并行节点）
+        /// </summary>
+        public void Stop()
+        {
+            for (int i = _parallelNodes.Count - 1; i >= 0; i--)
+            {
+                _parallelNodes[i].OnExit();
+            }
+            _parallelNodes.Clear();
+
+            if (_curNode != null)
+            {
+                _curNode.SubFsm?.Stop();
+                ZEngineLog.Log($"FSM stop: {_curNode.Name}");
+                _curNode.OnExit();
+                _curNode = null;
+                _preNode = null;
+            }
+        }
+
+        #region 并行节点管理
+
+        /// <summary>
+        /// 添加并行节点（立即 OnEnter，与主节点同时运行）
+        /// </summary>
+        public void AddParallelNode(IFsmNode node)
+        {
+            if (node == null)
+                throw new ArgumentNullException(nameof(node));
+            if (_parallelNodes.Contains(node))
+            {
+                ZEngineLog.Warning($"Parallel node {node.Name} already exists");
+                return;
+            }
+            _parallelNodes.Add(node);
+            node.OnEnter();
+            ZEngineLog.Log($"FSM add parallel node: {node.Name}");
+        }
+
+        /// <summary>
+        /// 移除并行节点（触发 OnExit）
+        /// </summary>
+        public void RemoveParallelNode(string nodeName)
+        {
+            for (int i = 0; i < _parallelNodes.Count; i++)
+            {
+                if (_parallelNodes[i].Name == nodeName)
+                {
+                    _parallelNodes[i].OnExit();
+                    _parallelNodes.RemoveAt(i);
+                    ZEngineLog.Log($"FSM remove parallel node: {nodeName}");
+                    return;
+                }
+            }
+            ZEngineLog.Warning($"Parallel node {nodeName} not found");
+        }
+
+        /// <summary>
+        /// 查询并行节点是否存在
+        /// </summary>
+        public bool HasParallelNode(string nodeName)
+        {
+            for (int i = 0; i < _parallelNodes.Count; i++)
+            {
+                if (_parallelNodes[i].Name == nodeName)
+                    return true;
+            }
+            return false;
+        }
+
+        #endregion
+
+        private bool IsContains(string nodeName)
+        {
+            for (int i = 0; i < _nodes.Count; i++)
+            {
+                if (_nodes[i].Name == nodeName)
+                    return true;
+            }
+            return false;
+        }
+        private IFsmNode GetNode(string nodeName)
+        {
+            for (int i = 0; i < _nodes.Count; i++)
+            {
+                if (_nodes[i].Name == nodeName)
+                    return _nodes[i];
+            }
+            return null;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="72,32" extention="Button" pivot="0.5,0.5">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+
+    <!-- 普通态背景：深灰透明胶囊 -->
+    <graph id="n0_phs4" name="n0" xy="0,0" size="72,32" touchable="false" type="rect" corner="8" lineSize="0" fillColor="#33ffffff">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+
+    <!-- hover 态背景：略亮 -->
+    <graph id="n1_phs4" name="n1" xy="0,0" size="72,32" touchable="false" type="rect" corner="8" lineSize="0" fillColor="#55ffffff">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+
+    <!-- 按下/选中态背景：琥珀色实底 -->
+    <graph id="n2_phs4" name="n2" xy="0,0" size="72,32" touchable="false" type="rect" corner="8" lineSize="0" fillColor="#ffee8833">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+
+    <!-- 选中态底部亮线 -->
+    <graph id="n3_phs4" name="underline" xy="10,30" size="52,2" touchable="false" type="rect" lineSize="0" fillColor="#ffffd966">
+      <gearDisplay controller="button" pages="3"/>
+    </graph>
+
+    <!-- 文字：普通灰 / 选中时白 -->
+    <text id="n4_phs4" name="title" xy="0,0" size="72,32" fontSize="13" align="center" vAlign="middle" autoSize="none" singleLine="true" bold="false" color="#99aaaaaa" text="第1天">
+      <gearColor controller="button"
+        pages="0,up,1,down,2,over,3,selectedOver"
+        values="#99aaaaaa|#ffffffff|#ffdddddd|#ffffffff"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+
+  </displayList>
+  <Button mode="Radio"/>
+</component>
